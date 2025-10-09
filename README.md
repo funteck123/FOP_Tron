@@ -490,8 +490,11 @@ If you are seeking for the possible inspiration or tutorials, you might watch th
 4. Version Control with Git and GitHub
 5. Tron (1982/2010) – Film and Arcade Game Reference
 
-_This project aims to help you master **Object-Oriented Programming**, **File I/O**, and **modular software design** — while allowing creativity and storytelling to shine.  
-Build your own version of the Grid, and may your Light Cycle be the last one standing._
+_I aim to help you master Fundamentals of Programming — while allowing creativity and storytelling to shine.  It is meant to be fun, flexible and def not tough!
+
+Build your own Grid (a digital frontier), and may your Light Cycle be the last one standing._
+
+![Tron Quote](image/tron_I_fight_for_the_users.gif)
 
 ### 5.1 Credit
 [FOP Valley](https://github.com/fyiernzy/FOP_Valley/tree/main)

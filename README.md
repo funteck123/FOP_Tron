@@ -29,7 +29,7 @@ Design and develop a **Tron-inspired 2D grid game** in **Java**, demonstrating:
 
 Your goal is to build a playable **Light Cycle Arena** game with leveling, enemies, and story progression.
 
----
+
 
 #### B. Marks Distribution Summary
 
@@ -45,7 +45,7 @@ Your goal is to build a playable **Light Cycle Arena** game with leveling, enemi
 
 **Total Basic Marks: 8**
 
----
+
 
 #### C. Extra Features (4 Marks)
 
@@ -58,7 +58,7 @@ Your goal is to build a playable **Light Cycle Arena** game with leveling, enemi
 
 **Total Additional Marks: 4**
 
----
+
 
 **Tip:**  
 Focus on the core 8 marks first — movement, collision, File I/O, and basic gameplay.  

@@ -110,14 +110,13 @@ class Tron extends Character {
 }
 ```
 
-Each playable character offers a distinct experience and storyline. 
+Each playable character can offer a distinct experience, storyline and ending. 
 
 | Character   | Color | Speed     | Handling    | Description                                    |
 |---------|-------|-----------|------------|------------------------------------------------|
 | Tron     | Blue  | Moderate | Balanced | The original defender of the Grid.   |
 | Kevin | White   | Very High | Smooth      | The creator — stable and resilient.          |
 
-Both characters share core properties such as speed, handling, lives, discsOwned, and experiencePoints. As they level up, their performance improves and new features such as light cycle variants, cutscenes, or storyline branches can be unlocked.
 
 Character data should be loaded from a file (characters.txt) using File I/O.
 No marks will be awarded if values are hardcoded without demonstrating file handling.
@@ -165,27 +164,16 @@ class Enemy {
 ```
 
 
-| Enemy   | Color | Speed     | Handling    | Description                                    |
-|---------|-------|-----------|------------|------------------------------------------------|
-| Clu     | Gold  | Very High | Aggressive | Corrupted intelligence, fast and strategic.   |
-| Rinzler | Red   | Very High | Sharp      | Silent hunter — tactical and deadly.          |
-| Sark    | Yellow| Medium    | Predictable| Enforcer AI, standard opponent.               |
-| Koura   | Green | Low       | Erratic    | Lowest-level AI, unpredictable but weak.     |
+| Enemy   | Color  | Difficulty  | XP   | Speed      | Handling     | Intelligence Level | Description                                                                                           |
+|----------|:------:|:------------:|:----:|:-----------:|:-------------:|:-----------------:|------------------------------------------------------------------------------------------------------------------|
+| **Clu**     | Gold   | Impossible  | 1000 | Very High  | Aggressive   | Brilliant         | Corrupted intelligence — fast, strategic, and unpredictable; capable of logical yet non-deterministic decisions. |
+| **Rinzler** | Red    | Hard        | 500  | Very High  | Sharp        | Clever            | Silent hunter — tactical, highly adaptive, and capable of limited collaboration with other enemies.              |
+| **Sark**    | Yellow | Medium      | 100  | Medium     | Predictable  | Moderate          | Enforcer AI — standard opponent with basic path prediction and avoidance behavior.                               |
+| **Koura**   | Green  | Easy        | 10   | Low        | Erratic      | Low               | Weak, random movement patterns with minimal avoidance or predictive behavior.                                    |
+
 
 
 Enemy AI Bots behavior varies according to difficulty level. At lower levels, enemies move in predictable patterns. As difficulty increases, opponents may attempt to anticipate the player’s direction, make strategies with teammates, flank from the sides, or recapture their own discs to reengage in combat.
-
-Implement levels of AI difficulty:
-- Koura → Easy → 10 XP - random but basic movement patterns.
-- Sark → Medium → 100 XP - moderately intelligent, avoids walls, predicts player path.
-- Rinzler → Hard → 500 XP - clever, makes smart moves and collaborates with other enemies.
-- Clu → Impossible → 1000 XP - brilliant, unpredictable movement with logical but non-deterministic brilliant decisions.
-
-Each bot must:
-- Attempt to avoid collisions logically.
-- React dynamically to player movement.
-- Occasionally, make “human-like” mistakes for realism.
-
 
 
 
@@ -261,7 +249,7 @@ Keep all combat outcomes visually concise and in Tron’s neon aesthetic (blue f
     <img src="image/alphazero.webp" alt="AlphaZero AI Inspiration" width="400">
 </div>
 
-AI difficulty levels are defined for each enemy type (Koura: Easy, Sark: Medium, Rinzler: Hard, Clu: Impossible). Detailed behavior and strategic logic are described in §2.3 Designing Enemies (for sample reference only).
+Detailed behavior and strategic logic are described in §2.3 Designing Enemies (for sample reference only).
 
 2.5.4 Round Flow and Victory Conditions
 - When all enemies are derezzed, the player wins the round and earns XP.
@@ -276,7 +264,6 @@ Proper use of abstraction, inheritance, and modular code.
 
 ### 3.1 Save game functionality (1 mark)
 
-It would be a great pity if someone couldn’t save their game progress or compare their achievements with others. Without these features, players would have to replay the same content repeatedly, and their accomplishments would not be recognized.
 
 1. To enhance the player experience, implement a save system that records the player’s progress — including level, XP, and achievements — allowing them to continue from where they left off.
 2. The game should prompt players to save before exiting, reminding them to preserve their current state.
@@ -299,9 +286,9 @@ Consider using knowledge acquired in File I/O for implementing this functionalit
     <img src="image/Narrative_choice.jpg" alt="Narrative Choice" width="400">
 </div>
 
-Mistakes aren’t the only thing that can interrupt a good game — lack of story flow can too. To create a truly engaging Tron experience, implement a story engine that reveals narrative sequences between gameplay stages.
+To create a truly engaging Tron experience, implement a story engine that reveals narrative sequences between gameplay stages.
 
-1. The storyline should align with the Tron (1982/2010) universe — gradually revealing the history of the Grid, the rise of Clu, and Kevin Flynn’s legacy. Flexible.
+1. The storyline should align with the Tron (1982/2010) universe — gradually revealing the history of the Grid, the rise of Clu, and Kevin Flynn’s legacy. 
 2. Players make choices that influence dialogue or unlock achievements and **alternate story outcomes**.
 3. Cutscenes can be displayed as:
     - Text-based story transitions,
@@ -315,26 +302,16 @@ This feature bridges gameplay and storytelling, offering players a reason to kee
 
 Repetition can make even the most polished game feel predictable. To keep each playthrough fresh, implement a random arena generator that dynamically creates new maps every time the game starts.
 
-1. Each map must maintain logical playability — no unreachable areas or overlapping walls.
-2. Include randomly placed ramps, barriers, and glow effects to add visual diversity.
-3. Random seeds should vary for each game launch, ensuring no two arenas feel the same.
-
-This encourages replayability and showcases procedural generation techniques suitable for grid-based games.
-
 
 ### 3.4 Aesthetic Enhancements and Achievements (0.5 mark)
 
 Adding visual flair and a sense of accomplishment can greatly enhance player engagement.
 
-1. Implement colored text and dynamic lighting effects to represent different factions and in-game states:
-    - Blue for player actions
-    - Red for enemy alerts
-    - Gold for bosses or achievements
-2. Include ASCII visuals or glowing UI panels for menus and battle interfaces to reflect Tron’s neon aesthetic.
+1. Implement sound effects and audio tracks.
+2. Include colored text, ASCII visuals or glowing UI panels for menus and battle interfaces to reflect Tron’s neon aesthetic.
 3. Introduce achievement notifications, such as:
     - “🏆 Survived 3 Rounds Against Clu!”
     - “✨ Defeated Rinzler Without Losing a Life!”
-4. Store UI elements, ASCII art, and achievements in dedicated resource files (e.g., ui.txt, achievements.txt).
 
 Feel free to incorporate any other features that you find interesting! Don't confine yourselves to the assignment question. Get as creative as you can, because there are no limits!
 
@@ -391,7 +368,6 @@ By refactoring the code in this manner, we indeed improve scalability and mainta
 
 The Single Responsibility Principle is a fundamental programming principle that states that *A class should have only one reason to change.* It emphasizes that each class should be responsible for a single behavior or functionality.
 
-In the given example, while applying OOP, it is important to ensure that each class is responsible for its own specific behavior. For instance, a PlayerCycle class may be responsible for throwing discs or avoiding jetwalls, but should not handle unrelated tasks like database management or file saving.
 
 ### 4.2 Using Git and Github for Cooperation
 
@@ -411,13 +387,6 @@ Therefore, it's advisable to refrain from using platforms like WhatsApp or Teleg
     <img src="image/git-and-github.png" alt="Image Description" width="400" height="220">
 </div>
 
-Among the various version control systems (VCS) available, Git stands out as one of the best options. Although some people may mistakenly believe that Git and GitHub are synonymous, they are, in fact, distinct entities.
-
-Git is a distributed version control system designed to track changes in computer files. It excels at facilitating collaborative software development among programmers. Its key objectives include speed, data integrity, and support for distributed and non-linear workflows.
-
-On the other hand, GitHub serves as an online hosting service specifically tailored for software development and version control using Git. It enhances Git's capabilities by providing features such as access control, bug tracking, software feature requests, task management, continuous integration, and project wikis.
-
-In your assignment, it is crucial for you and your teammates to leverage Git and GitHub for effective team cooperation. Merely relying on copying and pasting or sharing ZIP files might suffice for small projects. However, as the codebase grows significantly, such approaches can lead to disastrous consequences. Utilizing Git and GitHub ensures streamlined collaboration and mitigates the challenges associated with managing large-scale projects.
 
 #### 4.2.2 Recommended resources on studying Git
 
@@ -456,7 +425,7 @@ After making changes, like creating a new function such as `Login`, and wanting 
 
 #### 4.2.4 Writing a good commit message
 
-Writing informative commit messages and committing changes frequently not only helps others understand the modifications you've made but also enables easier access to specific older versions. A well-crafted commit message can serve as a helpful update log. Let's compare the following examples:
+A well-crafted commit message can serve as a helpful update log. Let's compare the following examples:
 
 ```bash
 git commit -m "Add new files"
@@ -480,7 +449,6 @@ Which set of messages is more descriptive? Undoubtedly, the second set is more i
     <img src="image/programmer-meme.png" alt="Image Description" width="300" height="300">
 </div>
 
-Code is read more often than it is written. Avoid trying to be overly clever. While it may seem impressive to code swiftly with three-character variables or craft complex one-liners with numerous loops and clauses, both your present and future selves, along with your teammates, will benefit from the improved readability that comes from taking the time to give your methods and variables meaningful names, maintain proper spacing, and add meaningful comments. Always approach coding as if you'll need to explain it a week later, because the reality is, you will, even if it's just to yourself.
 
 There are generally three naming conventions, which are known as camelCase, snake_case and PascalCase. You might refer to [This Article](https://www.freecodecamp.org/news/snake-case-vs-camel-case-vs-pascal-case-vs-kebab-case-whats-the-difference/#snake-case) which clearly explains everything you would need for the naming convention.
 

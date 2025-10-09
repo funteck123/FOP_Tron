@@ -36,7 +36,9 @@ Your project should strike a balance between story progression and gameplay mech
 
 ### 2.2 - Creating characters (1 marks)
 
-#### 2.2.1 Create 5 archetypes
+![Characters](image/tron characters.jpg)
+
+#### 2.2.1 Design Playable Characters
 
 1. Create two character classes based on the information provided in characters.txt. This file contains the names of characters along with their initial attributes, including speed, handling, lives, discsOwned, and experiencePoints. When a player creates a new character, the character's initial attributes should be determined by the data in characters.txt.
 

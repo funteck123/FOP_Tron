@@ -491,7 +491,6 @@ If you are seeking for the possible inspiration or tutorials, you might watch th
 5. Tron (1982/2010) – Film and Arcade Game Reference
 
 _I aim to help you master Fundamentals of Programming — while allowing creativity and storytelling to shine.  It is meant to be fun, flexible and def not tough!
-
 Build your own Grid (a digital frontier), and may your Light Cycle be the last one standing._
 
 ![Tron Quote](image/tron_I_fight_for_the_users_1.gif)

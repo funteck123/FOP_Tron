@@ -494,7 +494,7 @@ _I aim to help you master Fundamentals of Programming — while allowing creativ
 
 Build your own Grid (a digital frontier), and may your Light Cycle be the last one standing._
 
-![Tron Quote](image/tron_I_fight_for_the_users.gif)
+![Tron Quote](image/tron_I_fight_for_the_users_1.gif)
 
 ### 5.1 Credit
 [FOP Valley](https://github.com/fyiernzy/FOP_Valley/tree/main)

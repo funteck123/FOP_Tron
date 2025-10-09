@@ -496,14 +496,13 @@ git rebase --continue
 
 Only push once your rebase is complete and all conflicts are resolved.
 
+Must read:
 - [Atlassian Git Tutorials – Resolve Merge Conflicts](https://www.atlassian.com/git/tutorials/using-branches/merge-conflicts)
 - [Git Rebase Explained – freeCodeCamp](https://www.freecodecamp.org/news/git-rebase-and-merge-explained/)
 
-If you are seeking for the possible inspiration or tutorials:
-
 ## 5 - 📚 Recommended Resources:
 
-### **Turn-Based / Text Game Tutorials & Examples**
+### 1. Turn-Based / Text Game 
 
 1. Build Your Own Turn-Based Strategy Game in Java ― YouTube  
    https://www.youtube.com/watch?v=241zKEY0IXk :contentReference[oaicite:0]{index=0}  
@@ -518,7 +517,7 @@ If you are seeking for the possible inspiration or tutorials:
    https://www.youtube.com/watch?v=hbrvioPiSdA :contentReference[oaicite:3]{index=3}  
 
 
-### **Snake / Grid / Light Cycle / Tron-Style Game Tutorials & Examples**
+### 2. Snake / Grid / Light Cycle / Tron-Style Game 
 
 5. Build a Snake Game in Java ‒ Quick & Easy Tutorial ― YouTube  
     https://www.youtube.com/watch?v=S4lPjokjHWs :contentReference[oaicite:10]{index=10}  
@@ -549,4 +548,4 @@ _Build your own Grid (a digital frontier), and may your Light Cycle be the last 
 ![Tron Quote](image/tron_I_fight_for_the_users_1.gif)
 
 ### 5.1 Credit
-Some content, particularly Section 4, were inspired and adapted from [FOP Valley](https://github.com/fyiernzy/FOP_Valley/tree/main) by **Ng Zhi Yang (@fyiernzy)**.
+Some contents, particularly Section 4, were inspired, adapted and refined from [FOP Valley](https://github.com/fyiernzy/FOP_Valley/tree/main) by **Ng Zhi Yang (@fyiernzy)**.

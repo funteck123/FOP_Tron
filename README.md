@@ -1,6 +1,6 @@
 # FOP Tron
 
-All the resources mentioned in this assignment can be found at [Here](https://github.com/funteck123/FOP_Tron/tree/main).
+Resources: Related files for this assignment are available here → [FOP_Tron GitHub Repository](https://github.com/funteck123/FOP_Tron/tree/main).
 
 As of your Fundamental of Programming (FOP) Assignment, you are required to design and develop a 2D interactive game inspired by the Tron: Legacy (2010) and [Tron (1982 movie and video game)](https://en.wikipedia.org/wiki/Tron_(video_game)).
 
@@ -90,7 +90,7 @@ Add 1 or 2 extra features to get additional marks. It is NOT compulsory to imple
 * These arenas can differ in layout, speed ramp placement, and obstacle arrangement.
 
 
-### 2.2 Creating characters (1 marks)
+### 2.2 Creating characters (1 mark)
 
 <div style="text-align:center">
     <img src="image/tron_characters_crop_2.jpg" alt="Tron Characters" width="450">
@@ -563,5 +563,11 @@ _Build your own Grid (a digital frontier), and may your Light Cycle be the last 
     <img src="image/tron_I_fight_for_the_users_1.gif" alt="Tron Quote - I Fight for the Users" width="400">
 </div>
 
-### 5.1 Credit
+### 7 - Credit
 Some content, particularly Section 4, were inspired, adapted and refined from [FOP Valley](https://github.com/fyiernzy/FOP_Valley/tree/main) by Ng Zhi Yang (@fyiernzy).
+
+---
+**Version:** 1.0.0  
+**Last Updated:** October 2025  
+**Prepared by:** Mohamamd Shahid AKhtar 
+**Course:** WIX1002

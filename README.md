@@ -12,16 +12,14 @@ As of your Fundamental of Programming (FOP) Assignment, you are required to desi
 
 In this assignment, your task is to create a 2D interactive arena game that combines strategic gameplay with narrative storytelling. Players will control a futuristic Light Cycle that leaves behind a glowing energy trail (jetwall) as it moves through the Grid. The goal is simple — outmaneuver your opponents and make them collide with jetwalls, walls, or each other to be the last cycle standing.
 
-However, this is not merely a game about survival. You are also tasked to implement an underlying storyline system, where narrative elements and cutscenes based on the Tron universe are progressively revealed through gameplay. Players will unlock new story chapters, achievements, and characters as they level up.
-
-Your project should strike a balance between story progression and gameplay mechanics — approximately half the focus on player experience and narrative flow, and the other half on AI logic, collision systems, and technical implementation.
+However, this is not merely a game about survival. You are also tasked to implement a simple storyline, where narrative elements and cutscenes based on the Tron universe are progressively revealed through gameplay. Players will unlock new story chapters, achievements, and characters as they level up.
 
 
 Your program should demonstrate mastery of:
 - **Logic flow**  
 - **Object-Oriented Programming (OOP)**  
 - **File I/O handling** 
-- (Optional) **Basic AI and simple graphics (Java Swing or ASCII)**  
+- (Extra) **Basic AI bots (No LLMs or APIs) and simple graphics (Java Swing or ASCII)**  
 
 
 ### 1.1 Overview

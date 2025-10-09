@@ -88,8 +88,6 @@ You are encouraged to create cutscenes or visual sequences (static images or vid
 
 ### 2.3 - Design Enemies (1 marks)
 
-![Tron City Intro](image/tron-uprising-argon-city.avif)
-
 1. Design an Enemy superclass that represents AI-controlled opponents.
 Each enemy should have attributes such as speed, handling, and aggressionLevel.
 2. Design **5 unique enemies** that extend the `Enemy` class based on description in `enemies.txt`

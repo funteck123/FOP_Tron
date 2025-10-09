@@ -52,11 +52,12 @@ class Tron extends Character {
 }
 ```
 
-Each playable character offers a distinct experience. 
+Each playable character offers a distinct experience and storyline. 
 
-Character	Color	Speed	Handling	Description 
-Tron	Blue	High	Balanced	The original defender of the Grid. 
-Kevin Flynn	White	Moderate	Smooth	The creator — stable and resilient. 
+| Character   | Color | Speed     | Handling    | Description                                    |
+|---------|-------|-----------|------------|------------------------------------------------|
+| Tron     | Gold  | Moderate | Balanced | The original defender of the Grid.   |
+| Kevin | Red   | Very High | Smooth      | The creator — stable and resilient.          |
 
 Both characters share core properties such as speed, handling, lives, discsOwned, and experiencePoints. As they level up, their performance improves and new features such as light cycle variants, cutscenes, or storyline branches can be unlocked.
 
@@ -157,14 +158,14 @@ Now that characters, enemies, and disc mechanics are implemented, the next step 
 1. Each round begins by spawning the player and AI-controlled enemies at a random quadrant within the arena.
 
 2. Both players and enemies can perform continuous real-time actions such as:
-- Using speed ramps or evasive manoeuvres (if unlocked).
-- Moving across the grid (WASD controls).
-- (Disc mechanics are defined separately in §2.4.)
+    - Using speed ramps or evasive manoeuvres (if unlocked).
+    - Moving across the grid (WASD controls).
+    - (Disc mechanics are defined separately in §2.4.)
 
 3. A round continues until one of the following occurs:
-- The player loses all lives,
-- All enemies are derezzed, or
-- The player manually exits the game.
+    - The player loses all lives,
+    - All enemies are derezzed, or
+    - The player manually exits the game.
 
 2.5.2 Collision and Event Logic
 - Jetwall Collisions: Contact with any wall or jetwall reduces 0.5 lives.

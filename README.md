@@ -6,7 +6,7 @@ As of your Fundamental of Programming (FOP) Assignment, you are required to desi
 
 ## 1 - Introduction
 
-![Light Cycle](image/lightcycle.png)
+![Tron City Intro](image/tron-uprising-argon-city.png)
 
 In this assignment, your task is to create a 2D interactive arena game that combines strategic gameplay with narrative storytelling. Players will control a futuristic Light Cycle that leaves behind a glowing energy trail (jetwall) as it moves through the Grid. The goal is simple — outmaneuver your opponents and make them collide with jetwalls, walls, or each other to be the last cycle standing.
 

@@ -433,7 +433,7 @@ If you are seeking for the possible inspiration or tutorials, you might watch th
 5. The Making of Tron (1982) – Film Reference
 
 ### 5.1 Credit
-![FOP Valley](https://github.com/fyiernzy/FOP_Valley/tree/main)
+[FOP Valley](https://github.com/fyiernzy/FOP_Valley/tree/main)
 Ng Zhi Yang
 @fyiernzy
 

@@ -25,7 +25,7 @@ Design and develop a **Tron-inspired 2D grid game** in **Java**, demonstrating:
 - Logic flow and program structure  
 - Object-Oriented Programming (OOP)  
 - File I/O handling  
-- *(Optional)* Basic AI and simple graphics (Swing or ASCII)
+- *(Optional)* Basic AI Bots and simple graphics (Swing or ASCII)
 
 Your goal is to build a playable **Light Cycle Arena** game with leveling, enemies, and story progression.
 
@@ -38,7 +38,7 @@ Your goal is to build a playable **Light Cycle Arena** game with leveling, enemi
 | **Arena Design** | 0.5 | 40×40 grid arena with player movement and collisions. |
 | **Playable Characters** | 1.0 | Two characters (`Tron`, `Kevin`) loaded via file I/O. |
 | **Leveling System** | 1.0 | XP-based stat growth and unlocks up to Level 99. |
-| **Enemy Design** | 1.0 | Five unique AI enemies with attributes from file. |
+| **Enemy Design** | 1.0 | Four unique AI enemies with attributes from file. |
 | **Collision & Disc System** | 2.5 | Disc combat, wall collisions, and life system. |
 | **Arena Gameplay Loop** | 1.5 | Real-time or turn-based arena gameplay with HUD. |
 | **OOP & File Handling** | 0.5 | Proper use of abstraction, inheritance, and modular code. |
@@ -165,7 +165,7 @@ class Enemy {
 | Koura   | Green | Low       | Erratic    | Lowest-level AI, unpredictable but weak.     |
 
 
-Enemy AI behavior varies according to difficulty level. At lower levels, enemies move in predictable patterns. As difficulty increases, opponents may attempt to anticipate the player’s direction, make strategies with teammates, flank from the sides, or recapture their own discs to reengage in combat.
+Enemy AI Bots behavior varies according to difficulty level. At lower levels, enemies move in predictable patterns. As difficulty increases, opponents may attempt to anticipate the player’s direction, make strategies with teammates, flank from the sides, or recapture their own discs to reengage in combat.
 
 Implement levels of AI difficulty:
 - Koura → Easy → 10 XP - random but basic movement patterns.
@@ -210,7 +210,7 @@ Discs are the core combat mechanic in Tron Light Cycles. Each player or enemy wi
 
 ![Classic tron legacy light cycles](image/Classictronlegacylightcycles.webp)
 
-Now that characters, enemies, and disc mechanics are implemented, the next step is to design the core arena gameplay loop — the heart of FOP Tron. This system replaces traditional turn-based or text-based battles with a dynamic, real-time 2D light cycle arena where players and AI compete to survive on the Grid.
+Now that characters, enemies, and disc mechanics are implemented, the next step is to design the core arena gameplay loop — the heart of FOP Tron. This system replaces traditional turn-based or text-based battles with a dynamic, real-time 2D light cycle arena where players and AI Bots compete to survive on the Grid.
 
 2.5.1 Core Mechanics
 1. Each round begins by spawning the player and AI-controlled enemies at a random quadrant within the arena.
@@ -229,7 +229,7 @@ Now that characters, enemies, and disc mechanics are implemented, the next step 
 - Jetwall Collisions: Contact with any wall or jetwall reduces 0.5 lives.
 - Disc Impacts: Being struck by a disc costs 1 life.
 - Arena Boundaries: In open-grid arenas, falling off removes all remaining lives instantly.
-- AI Mistakes: Enemies can make human-like pathing errors, such as turning too late or hitting their own jetwalls, for realism.
+
 
 2.5.3 Visual Feedback and HUD
 A real-time Heads-Up Display (HUD) should display player stats such as:
@@ -248,11 +248,11 @@ Example event feedback:
 
 Keep all combat outcomes visually concise and in Tron’s neon aesthetic (blue for player actions, red for enemies, gold for achievements).
 
-2.5.4 Enemy AI Behavior
+2.5.4 Enemy AI Bot Behavior
 
 ![alphazero](image/alphazero.webp)
 
-AI difficulty levels are defined for each enemy type (Koura: Easy, Sark: Medium, Rinzler: Hard, Clu: Impossible). Detailed behavior and strategic logic are described in §2.3 Designing Enemies only for reference.
+AI difficulty levels are defined for each enemy type (Koura: Easy, Sark: Medium, Rinzler: Hard, Clu: Impossible). Detailed behavior and strategic logic are described in §2.3 Designing Enemies (for sample reference only).
 
 2.5.5 Round Flow and Victory Conditions
 - When all enemies are derezzed, the player wins the round and earns XP.
@@ -486,8 +486,8 @@ If you are seeking for the possible inspiration or tutorials, you might watch th
 4. Version Control with Git and GitHub
 5. Tron (1982/2010) – Film and Arcade Game Reference
 
-### This project aims to help you master **Object-Oriented Programming**, **File I/O**, and **modular software design** — while allowing creativity and storytelling to shine.  
-Build your own version of the Grid, and may your Light Cycle be the last one standing.
+_This project aims to help you master **Object-Oriented Programming**, **File I/O**, and **modular software design** — while allowing creativity and storytelling to shine.  
+Build your own version of the Grid, and may your Light Cycle be the last one standing._
 
 ### 5.1 Credit
 [FOP Valley](https://github.com/fyiernzy/FOP_Valley/tree/main)

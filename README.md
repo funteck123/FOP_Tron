@@ -37,11 +37,11 @@ Your goal is to build a playable **Light Cycle Arena** game with leveling, enemi
 |-----------|:-----:|-------------|
 | **Arena Design** | 0.5 | 40×40 grid arena with player movement and collisions. |
 | **Playable Characters** | 1.0 | Two characters (`Tron`, `Kevin`) loaded via file I/O. |
-| **Leveling System** | 1.0 | XP-based stat growth and unlocks up to Level 99. |
-| **Enemy Design** | 1.0 | Four unique AI enemies with attributes from file. |
-| **Collision & Disc System** | 2.5 | Disc combat, wall collisions, and life system. |
-| **Arena Gameplay Loop** | 1.5 | Real-time or turn-based arena gameplay with HUD. |
-| **OOP & File Handling** | 0.5 | Proper use of abstraction, inheritance, and modular code. |
+| **Leveling System** | 1.5 | XP-based stat growth and unlocks up to Level 99. |
+| **Enemy Design** | 1.5 | Four unique AI Bot enemies with attributes from file. |
+| **Collision & Disc System** | 1.5 | Disc combat, wall collisions, and life system. |
+| **Arena Gameplay Loop** | 1.0 | Real-time or turn-based arena gameplay with HUD. |
+| **OOP & File Handling** | 1.0 | Proper use of abstraction, inheritance, and modular code. |
 
 **Total Basic Marks: 8**
 
@@ -84,7 +84,7 @@ Add 1 or 2 extra features to get additional marks. It is NOT compulsory to imple
 * These arenas can differ in layout, speed ramp placement, and obstacle arrangement.
 
 
-### 2.2 - Creating characters (1 marks)
+### 2.2 Creating characters (1 marks)
 
 ![Characters](image/tron_characters_crop_2.jpg)
 
@@ -111,11 +111,11 @@ Each playable character offers a distinct experience and storyline.
 
 Both characters share core properties such as speed, handling, lives, discsOwned, and experiencePoints. As they level up, their performance improves and new features such as light cycle variants, cutscenes, or storyline branches can be unlocked.
 
-Character data should be loaded from a file (charcter.txt) using File I/O.
+Character data should be loaded from a file (characters.txt) using File I/O.
 No marks will be awarded if values are hardcoded without demonstrating file handling.
 
 
-#### 2.2.2 Implement leveling-up system
+#### 2.2.2 Implement leveling-up system (1.5)
 
 As characters progress through the Grid, they can gain experience (XP) and level up.
 Here are the general rules for progression:
@@ -135,11 +135,11 @@ Here are the general rules for progression:
 
 You are encouraged to create cutscenes or visual sequences (static images or videos) that play when significant milestones are reached, such as unlocking Kevin Flynn or defeating Clu. These narrative unlocks are intended to deepen immersion, rewarding both gameplay skill and commitment.
 
-### 2.3 - Design Enemies (1 marks)
+### 2.3 Design Enemies (1.5 marks)
 
 1. Design an Enemy superclass that represents AI-controlled opponents.
 Each enemy should have attributes such as speed, handling, and aggressionLevel.
-2. Design **5 unique enemies** that extend the `Enemy` class based on description in `enemies.txt`
+2. Design **4 unique enemies** that extend the `Enemy` class based on description in `enemies.txt`
 3. Their positions on the arena are generated randomly each round.
 4. Each time a new match begins, (seven) enemies (chosen from different types) are spawned.
 
@@ -181,7 +181,7 @@ Each bot must:
 
 
 
-### 2.4 - Collision and Disc Combat System (2.5 marks)
+### 2.4 Collision and Disc Combat System (1.5 marks)
 
 ![RedIdentityDisc](image/RedIdentityDisc-removebg-preview.png)
 
@@ -206,7 +206,7 @@ Discs are the core combat mechanic in Tron Light Cycles. Each player or enemy wi
 
 
 
-### 2.5 Arena-based real-time battle system (2D Light Cycle gameplay) (3 marks)
+### 2.5 Arena-based real-time battle system (2D Light Cycle gameplay) (1.0 marks)
 
 ![Classic tron legacy light cycles](image/Classictronlegacylightcycles.webp)
 
@@ -259,6 +259,10 @@ AI difficulty levels are defined for each enemy type (Koura: Easy, Sark: Medium,
 - Leveling up grants permanent stat boosts and may unlock new arenas, characters, or story chapters.
 - The game then transitions to a cutscene or story segment (if implemented) before the next round begins.
 
+### 2.6 OOP & File Handling (0.5 marks)
+Proper use of abstraction, inheritance, and modular code.
+
+
 ## 3 - Extra Feature Requirement (Total - 4 marks)
 
 ### 3.1 Save game functionality (1 mark)
@@ -276,7 +280,7 @@ It would be a great pity if someone couldn’t save their game progress or compa
 
 Consider using a database and the knowledge you have acquired in File I/O for implementing this functionality.
 
-### 3.2 Story Progression and Visual Cutscenes (2 mark)
+### 3.2 Story Progression and Visual Cutscenes (2 marks)
 
 ![Making_of_Clu](image/creation_of_clu.jpg)
 ![Narrative_choice](image/Narrative_choice.jpg)

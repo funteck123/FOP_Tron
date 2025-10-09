@@ -36,7 +36,7 @@ Your project should strike a balance between story progression and gameplay mech
 
 ### 2.2 - Creating characters (1 marks)
 
-![Characters](image/tron_characters_crop.jpg)
+![Characters](image/tron_characters_crop_2.jpg)
 
 #### 2.2.1 Design Playable Characters
 
@@ -116,8 +116,8 @@ Enemy AI behavior varies according to difficulty level. At lower levels, enemies
 Implement levels of AI difficulty:
 - Koura → Easy → 10 XP - random but basic movement patterns.
 - Sark → Medium → 100 XP - moderately intelligent, avoids walls, predicts player path.
-- Rinzler → Hard → 500 XP - clever, makes strategic moves and collaborates.
-- Clu → Impossible → 1000 XP - brilliant, unpredictable movement with logical but non-deterministic decisions.
+- Rinzler → Hard → 500 XP - clever, makes smart moves and collaborates with other enemies.
+- Clu → Impossible → 1000 XP - brilliant, unpredictable movement with logical but non-deterministic brilliant decisions.
 
 Each bot must:
 - Attempt to avoid collisions logically.

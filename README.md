@@ -16,6 +16,78 @@ However, this is not merely a game about survival. You are also tasked to implem
 
 Your project should strike a balance between story progression and gameplay mechanics — approximately half the focus on player experience and narrative flow, and the other half on AI logic, collision systems, and technical implementation.
 
+
+Your program should demonstrate mastery of:
+- **Logic flow**  
+- **Object-Oriented Programming (OOP)**  
+- **File I/O handling** 
+- (Optional) **Basic AI and simple graphics (Java Swing or ASCII)**  
+
+
+### 1.1 Overview
+
+## C. Basic Requirements (8 marks)
+
+| Feature | Marks | Description | Notes / Suggestions |
+|----------|:-----:|--------------|----------------------|
+| **Arena Design** | 0.5 | Create a **40×40 grid** arena where players move using `W`, `A`, `S`, `D`. Hitting jetwalls or arena boundaries reduces lives. Include 3 fixed arenas and 1 randomly generated arena. | Text-based or simple GUI accepted. |
+| **Playable Characters** | 1.0 | Implement 2 playable characters (`Tron`, `Kevin`) with attributes (speed, handling, lives, discsOwned, XP). Load initial stats from `characters.txt`. | Demonstrate File I/O – no hardcoding values. |
+| **Leveling Up System** | 1.0 | Implement XP-based leveling. Each level increases attributes and unlocks features. Cap at Level 99. | Keep algorithms simple (e.g., every 100 XP → +1 speed). |
+| **Enemy Design** | 1.0 | Create an `Enemy` superclass and at least **5 subclasses** (`Clu`, `Rinzler`, `Sark`, `Koura`, etc.) based on `enemies.txt`. Each enemy has different speed, handling, aggression. | Randomize enemy positions each round. |
+| **Collision & Disc System** | 2.5 | Implement collision between jetwalls, discs, and boundaries. Discs can be thrown, hit enemies, and be recaptured. Hitting causes life loss. | You may simplify disc mechanics if needed. |
+| **Arena Gameplay Loop** | 1.5 | Create a real-time or turn-based **battle loop**: spawn player/enemies, handle movement, detect collisions, and determine victory/defeat. Display stats and messages (HUD). | ASCII text or basic animation acceptable. |
+| **OOP & File Handling** | 0.5 | Use inheritance, abstraction, and file I/O correctly. Demonstrate modular design (separate classes). | Include proper comments and readable code. |
+
+---
+
+## D. Additional Features (4 marks)
+
+| Feature | Marks | Description | Notes / Suggestions |
+|----------|:-----:|--------------|----------------------|
+| **Save Game & Leaderboard** | 1.0 | Implement save/load functionality and a **Top 10 leaderboard** using a file or SQLite. Store player name, level, score, and date. | Prompt user to save before exit. |
+| **Story Progression & Cutscenes** | 2.0 | Implement story text or simple cutscenes that unlock after each level or boss defeat. Load story content from `story.txt`. | Text-based is sufficient; images/videos optional. |
+| **Random Arena Generator** | 0.5 | Generate random grid layouts each game. Ensure logical paths and playability. | Use random seed or algorithmic generation. |
+| **Visual & Achievement Enhancements** | 0.5 | Add colored text, ASCII art UI, and achievements such as “🏆 Defeated Clu!” | Load achievements/UI text from resource files. |
+
+---
+
+## C. Basic Requirements (8 marks)
+
+| Feature | Marks | Description | Notes / Suggestions |
+|----------|:-----:|--------------|----------------------|
+| **Arena Design** | 0.5 | Create a **40×40 grid** arena where players move using `W`, `A`, `S`, `D`. Hitting jetwalls or arena boundaries reduces lives. Include 3 fixed arenas and 1 randomly generated arena. | Text-based or simple GUI accepted. |
+| **Playable Characters** | 1.0 | Implement 2 playable characters (`Tron`, `Kevin`) with attributes (speed, handling, lives, discsOwned, XP). Load initial stats from `characters.txt`. | Demonstrate File I/O – no hardcoding values. |
+| **Leveling Up System** | 1.0 | Implement XP-based leveling. Each level increases attributes and unlocks features. Cap at Level 99. | Keep algorithms simple (e.g., every 100 XP → +1 speed). |
+| **Enemy Design** | 1.0 | Create an `Enemy` superclass and at least **5 subclasses** (`Clu`, `Rinzler`, `Sark`, `Koura`, etc.) based on `enemies.txt`. Each enemy has different speed, handling, aggression. | Randomize enemy positions each round. |
+| **Collision & Disc System** | 2.5 | Implement collision between jetwalls, discs, and boundaries. Discs can be thrown, hit enemies, and be recaptured. Hitting causes life loss. | You may simplify disc mechanics if needed. |
+| **Arena Gameplay Loop** | 1.5 | Create a real-time or turn-based **battle loop**: spawn player/enemies, handle movement, detect collisions, and determine victory/defeat. Display stats and messages (HUD). | ASCII text or basic animation acceptable. |
+| **OOP & File Handling** | 0.5 | Use inheritance, abstraction, and file I/O correctly. Demonstrate modular design (separate classes). | Include proper comments and readable code. |
+
+---
+
+## D. Additional Features (4 marks)
+
+| Feature | Marks | Description | Notes / Suggestions |
+|----------|:-----:|--------------|----------------------|
+| **Save Game & Leaderboard** | 1.0 | Implement save/load functionality and a **Top 10 leaderboard** using a file or SQLite. Store player name, level, score, and date. | Prompt user to save before exit. |
+| **Story Progression & Cutscenes** | 2.0 | Implement story text or simple cutscenes that unlock after each level or boss defeat. Load story content from `story.txt`. | Text-based is sufficient; images/videos optional. |
+| **Random Arena Generator** | 0.5 | Generate random grid layouts each game. Ensure logical paths and playability. | Use random seed or algorithmic generation. |
+| **Visual & Achievement Enhancements** | 0.5 | Add colored text, ASCII art UI, and achievements such as “🏆 Defeated Clu!” | Load achievements/UI text from resource files. |
+
+---
+
+## F. Tips for Scoring Marks Easily  
+
+1. ✅ Focus on completing the **8 basic marks** first.  
+   - Start with movement, collision, and File I/O for characters/enemies.  
+   - Ensure the arena and core logic are working.  
+2. 🎮 Use **text-based display** (no GUI required for full marks).  
+3. 🧠 Keep AI simple — any movement logic is acceptable for passing criteria.  
+4. 💾 Implement basic story and narrative choices using text files for easy marks.  
+5. ✨ Attempt **one extra feature** (e.g., save or leaderboard) for bonus marks.  
+
+---
+
 ## 2 - Basic Requirement (Total - 8 marks)
 
 ### 2.1 Arena Design (0.5 mark)
@@ -422,11 +494,12 @@ There are generally three naming conventions, which are known as camelCase, snak
 
 ## 5 - Contact Me
 
-For any questions or clarifications, please contact me, Mohammad Shahid Akhtar, via:
-WhatsApp or Telegram at 014-8784386
-Email at 22052133@siswa.um.edu.my. 
+For any clarifications or issues, contact:  
+**Mr. Mohammad Shahid Akhtar**  
+📱 WhatsApp / Telegram: 014-8784386  
+📧 Email: 22052133@siswa.um.edu.my  
 
-Please remind me after 24 hours if I forget to reply.
+If there’s no response within 24 hours, please send a polite reminder.
 
 If you are seeking for the possible inspiration or tutorials, you might watch the following videos on Youtube or elsewhere:
 
@@ -435,6 +508,9 @@ If you are seeking for the possible inspiration or tutorials, you might watch th
 3. SQLite Database Integration in Java Applications
 4. Version Control with Git and GitHub
 5. Tron (1982/2010) – Film and Arcade Game Reference
+
+### This project aims to help you master **Object-Oriented Programming**, **File I/O**, and **modular software design** — while allowing creativity and storytelling to shine.  
+Build your own version of the Grid, and may your Light Cycle be the last one standing.
 
 ### 5.1 Credit
 [FOP Valley](https://github.com/fyiernzy/FOP_Valley/tree/main)

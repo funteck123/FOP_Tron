@@ -102,11 +102,13 @@ class Enemy {
 }
 
 
-Enemy	Color	Speed	Handling	Description 
-Clu	Gold	Very High	Aggressive	Corrupted intelligence, fast and strategic. No
-Rinzler	Red	Very High	Sharp	Silent hunter — tactical and deadly. No
-Sark	Yellow	Medium	Predictable	Enforcer AI, standard opponent. No
-Koura	Green	Low	Erratic	Lowest-level AI, unpredictable but weak. No
+| Enemy   | Color | Speed     | Handling    | Description                                    |
+|---------|-------|-----------|------------|------------------------------------------------|
+| Clu     | Gold  | Very High | Aggressive | Corrupted intelligence, fast and strategic.   |
+| Rinzler | Red   | Very High | Sharp      | Silent hunter — tactical and deadly.          |
+| Sark    | Yellow| Medium    | Predictable| Enforcer AI, standard opponent.               |
+| Koura   | Green | Low       | Erratic    | Lowest-level AI, unpredictable but weak.     |
+
 
 Enemy AI behavior varies according to difficulty level. At lower levels, enemies move in predictable patterns. As difficulty increases, opponents may attempt to anticipate the player’s direction, make strategies with teammates, flank from the sides, or recapture their own discs to reengage in combat.
 

@@ -62,7 +62,7 @@ Your goal is to build a playable **Light Cycle Arena** game with leveling, enemi
 
 **Tip:**  
 Focus on the core 8 marks first — movement, collision, File I/O, and basic gameplay.  
-Add 1 or 2 extra features to get additional marks. It is NOT compulsory to implement only the same extr features.
+Add 1 or 2 extra features to get additional marks. It is NOT compulsory to implement only the same extra features.
 
 
 ## 2 - Basic Requirement (Total - 8 marks)
@@ -111,8 +111,8 @@ Each playable character offers a distinct experience and storyline.
 
 Both characters share core properties such as speed, handling, lives, discsOwned, and experiencePoints. As they level up, their performance improves and new features such as light cycle variants, cutscenes, or storyline branches can be unlocked.
 
-Archetype data should be loaded from a file (archetypes.txt) using File I/O.
- No marks will be awarded if values are hardcoded without demonstrating file handling.
+Character data should be loaded from a file (charcter.txt) using File I/O.
+No marks will be awarded if values are hardcoded without demonstrating file handling.
 
 
 #### 2.2.2 Implement leveling-up system
@@ -398,7 +398,7 @@ Among the various version control systems (VCS) available, Git stands out as one
 
 Git is a distributed version control system designed to track changes in computer files. It excels at facilitating collaborative software development among programmers. Its key objectives include speed, data integrity, and support for distributed and non-linear workflows.
 
-On the other hand, GitHub serves as an online hosting service specifically tailored for software development and version control using Git. It enhances Git's capspells by providing features such as access control, bug tracking, software feature requests, task management, continuous integration, and project wikis.
+On the other hand, GitHub serves as an online hosting service specifically tailored for software development and version control using Git. It enhances Git's capabilities by providing features such as access control, bug tracking, software feature requests, task management, continuous integration, and project wikis.
 
 In your assignment, it is crucial for you and your teammates to leverage Git and GitHub for effective team cooperation. Merely relying on copying and pasting or sharing ZIP files might suffice for small projects. However, as the codebase grows significantly, such approaches can lead to disastrous consequences. Utilizing Git and GitHub ensures streamlined collaboration and mitigates the challenges associated with managing large-scale projects.
 

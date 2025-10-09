@@ -461,8 +461,6 @@ git commit -m "Implement embedded database for storage"
 
 Which set of messages is more descriptive? Undoubtedly, the second set is more informative.
 
-It is important to understand that commit messages should accurately reflect the changes made in the commit. The messages should be concise yet descriptive, providing a clear understanding of the modifications introduced. By following good commit message practices, developers can enhance collaboration and make it easier for others to navigate and utilize previous versions of the codebase.
-
 ### 4.3 Writing readable code
 
 <div style="text-align:center">
@@ -473,7 +471,69 @@ Code is read more often than it is written. Avoid trying to be overly clever. Wh
 
 There are generally three naming conventions, which are known as camelCase, snake_case and PascalCase. You might refer to [This Article](https://www.freecodecamp.org/news/snake-case-vs-camel-case-vs-pascal-case-vs-kebab-case-whats-the-difference/#snake-case) which clearly explains everything you would need for the naming convention.
 
-## 5 - Contact Me
+### 4.4 Conflict resolution
+
+⚠️ VERY IMPORTANT: Conflict Resolution and Rebasing Before Push
+
+When multiple teammates modify the same files, merge conflicts can occur.
+A conflict happens when Git cannot automatically combine changes.
+You must resolve these conflicts manually before pushing.
+
+```bash
+git pull --rebase origin main
+```
+
+Run this before pushing to ensure your local commits are rebased on the latest version from the remote repository.
+Rebasing keeps the commit history clean and avoids unnecessary merge commits.
+
+If a conflict occurs, Git will pause and show which files need manual fixes.
+
+After fixing, continue with:
+```bash
+git add .
+git rebase --continue
+```
+
+Only push once your rebase is complete and all conflicts are resolved.
+
+- [Atlassian Git Tutorials – Resolve Merge Conflicts](https://www.atlassian.com/git/tutorials/using-branches/merge-conflicts)
+- [Git Rebase Explained – freeCodeCamp](https://www.freecodecamp.org/news/git-rebase-and-merge-explained/)
+
+If you are seeking for the possible inspiration or tutorials:
+
+## 5 - 📚 Recommended Resources:
+
+### **Turn-Based / Text Game Tutorials & Examples**
+
+1. Build Your Own Turn-Based Strategy Game in Java ― YouTube  
+   https://www.youtube.com/watch?v=241zKEY0IXk :contentReference[oaicite:0]{index=0}  
+
+2. Java Tutorial: Simple Text Adventure ― YouTube  
+   https://www.youtube.com/watch?v=dvdfm0B1aMw :contentReference[oaicite:1]{index=1}  
+
+3. Programming a Java Text Adventure: The Game Structure ― YouTube  
+   https://www.youtube.com/watch?v=GB3pgc9PCmc :contentReference[oaicite:2]{index=2}  
+
+4. Java Text RPG ‒ #5 Battle System | Code Student ― YouTube  
+   https://www.youtube.com/watch?v=hbrvioPiSdA :contentReference[oaicite:3]{index=3}  
+
+
+### **Snake / Grid / Light Cycle / Tron-Style Game Tutorials & Examples**
+
+5. Build a Snake Game in Java ‒ Quick & Easy Tutorial ― YouTube  
+    https://www.youtube.com/watch?v=S4lPjokjHWs :contentReference[oaicite:10]{index=10}  
+
+6. Java snake game for beginners ― YouTube  
+    https://www.youtube.com/watch?v=bI6e6qjJ8JQ :contentReference[oaicite:11]{index=11}  
+
+7. Tron Game in Python (light cycle style) ― YouTube  
+    https://www.youtube.com/watch?v=anckCpdZfKM :contentReference[oaicite:16]{index=16}  
+
+8. hdescottes / GdxGame (turn-based RPG in Java + libGDX) — GitHub repo  
+    https://github.com/hdescottes/GdxGame :contentReference[oaicite:17]{index=17}  
+
+
+## 6 - Contact Me
 
 For any clarifications or issues, contact:  
 **Mr. Mohammad Shahid Akhtar**  
@@ -482,25 +542,11 @@ For any clarifications or issues, contact:
 
 If there’s no response within 24 hours, please send a polite reminder.
 
-If you are seeking for the possible inspiration or tutorials, you might watch the following videos on Youtube or elsewhere:
+_I aim to help you master Fundamentals of Programming — while allowing creativity and storytelling to shine.  It is meant to be fun, flexible and def not tough!_
 
-1. Snake Game in Java – Java2D Package Tutorial
-2. Artificial Intelligence Pathfinding for Grid-Based Games
-3. CSV File I/O or SQLite Database Integration in Java Applications
-4. Version Control with Git and GitHub
-5. Tron (1982/2010) – Film and Arcade Game Reference
-
-_I aim to help you master Fundamentals of Programming — while allowing creativity and storytelling to shine.  It is meant to be fun, flexible and def not tough!
-Build your own Grid (a digital frontier), and may your Light Cycle be the last one standing._
+_Build your own Grid (a digital frontier), and may your Light Cycle be the last one standing._
 
 ![Tron Quote](image/tron_I_fight_for_the_users_1.gif)
 
 ### 5.1 Credit
-[FOP Valley](https://github.com/fyiernzy/FOP_Valley/tree/main)
-Ng Zhi Yang
-@fyiernzy for assignment inspiration, template and content.
-
-
-### 5.1 Credit
-Sections of this document, particularly Section 4, were adapted from [FOP Valley](https://github.com/fyiernzy/FOP_Valley/tree/main).  
-Credits to **Ng Zhi Yang (@fyiernzy)** for the content template and inspiration.
+Some content, particularly Section 4, were inspired and adapted from [FOP Valley](https://github.com/fyiernzy/FOP_Valley/tree/main) by **Ng Zhi Yang (@fyiernzy)**.

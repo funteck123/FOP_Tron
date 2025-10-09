@@ -36,7 +36,7 @@ Your project should strike a balance between story progression and gameplay mech
 
 ### 2.2 - Creating characters (1 marks)
 
-![Characters](image/tron characters.jpg)
+![Characters](image/tron-characters.jpg)
 
 #### 2.2.1 Design Playable Characters
 

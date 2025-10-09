@@ -537,7 +537,8 @@ Must read:
 For any clarifications or issues, contact:  
 **Mr. Mohammad Shahid Akhtar**  
 📱 WhatsApp / Telegram: 014-8784386  
-📧 Email: 22052133@siswa.um.edu.my  
+📧 Email: 22052133@siswa.um.edu.my
+
 
 If there’s no response within 24 hours, please send a polite reminder.
 
@@ -548,4 +549,4 @@ _Build your own Grid (a digital frontier), and may your Light Cycle be the last 
 ![Tron Quote](image/tron_I_fight_for_the_users_1.gif)
 
 ### 5.1 Credit
-Some contents, particularly Section 4, were inspired, adapted and refined from [FOP Valley](https://github.com/fyiernzy/FOP_Valley/tree/main) by Ng Zhi Yang (@fyiernzy).
+Some content, particularly Section 4, were inspired, adapted and refined from [FOP Valley](https://github.com/fyiernzy/FOP_Valley/tree/main) by Ng Zhi Yang (@fyiernzy).

@@ -94,6 +94,8 @@ Each enemy should have attributes such as speed, handling, and aggressionLevel.
 3. Their positions on the arena are generated randomly each round.
 4. Each time a new match begins, (seven) enemies (chosen from different types) are spawned.
 
+```java
+
 // Define the Enemy class to represent in-game AI opponents.
 class Enemy {
     String name;         // Enemy identifier
@@ -102,6 +104,8 @@ class Enemy {
     double handling;     // Turning efficiency
     double aggression;   // Determines chase and attack logic
 }
+
+```
 
 
 | Enemy   | Color | Speed     | Handling    | Description                                    |

@@ -1,4 +1,4 @@
-# FOP Valley
+# FOP Tron
 
 All the resources mentioned in this assignment can be found at [Here](https://github.com/funteck123/FOP_Tron/tree/main).
 

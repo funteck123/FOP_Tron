@@ -548,4 +548,4 @@ _Build your own Grid (a digital frontier), and may your Light Cycle be the last 
 ![Tron Quote](image/tron_I_fight_for_the_users_1.gif)
 
 ### 5.1 Credit
-Some contents, particularly Section 4, were inspired, adapted and refined from [FOP Valley](https://github.com/fyiernzy/FOP_Valley/tree/main) by **Ng Zhi Yang (@fyiernzy)**.
+Some contents, particularly Section 4, were inspired, adapted and refined from [FOP Valley](https://github.com/fyiernzy/FOP_Valley/tree/main) by Ng Zhi Yang (@fyiernzy).

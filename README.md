@@ -165,7 +165,7 @@ class Enemy {
 
 
 | Enemy   | Color  | Difficulty  | XP   | Speed      | Handling     | Intelligence Level | Description                                                                                           |
-|----------|:------:|:------------:|:----:|:-----------:|:-------------:|:-----------------:|------------------------------------------------------------------------------------------------------------------|
+|---------|-------|-----------|------------|------------------------------------------------|--|--|--|
 | **Clu**     | Gold   | Impossible  | 1000 | Very High  | Aggressive   | Brilliant         | Corrupted intelligence — fast, strategic, and unpredictable; capable of logical yet non-deterministic decisions. |
 | **Rinzler** | Red    | Hard        | 500  | Very High  | Sharp        | Clever            | Silent hunter — tactical, highly adaptive, and capable of limited collaboration with other enemies.              |
 | **Sark**    | Yellow | Medium      | 100  | Medium     | Predictable  | Moderate          | Enforcer AI — standard opponent with basic path prediction and avoidance behavior.                               |

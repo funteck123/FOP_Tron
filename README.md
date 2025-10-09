@@ -418,9 +418,13 @@ There are generally three naming conventions, which are known as camelCase, snak
 
 ## 5 - Contact Me
 
-For any questions or clarifications, please contact me, Mohammad Shahid Akhtar, via WhatsApp or Telegram at 014-8784386, or by email at 22052133@siswa.um.edu.my. However, WhatsApp and Telegram will always be the preferred choices. If you contact me through email and I don't reply within 24 hours, please feel free to contact me through those messaging apps.
+For any questions or clarifications, please contact me, Mohammad Shahid Akhtar, via:
+WhatsApp or Telegram at 014-8784386
+Email at 22052133@siswa.um.edu.my. 
 
-If you are seeking for the possible input and output, you might watch the following videos on Youtube:
+Please remind me after 24 hours if I forget to reply.
+
+If you are seeking for the possible inspiration or tutorials, you might watch the following videos on Youtube or elsewhere:
 
 1. Snake Game in Java – Java2D Package Tutorial
 2. Artificial Intelligence Pathfinding for Grid-Based Games

@@ -25,7 +25,7 @@ Your project should strike a balance between story progression and gameplay mech
     * `A` moves left
     * `D` moves right
 * Each cycle leaves behind a **jetwall** that acts as an impassable barrier.
-* Hitting a jetwall or boundary wall causes the player to lose half a life (**-0.5 HP**) instead of instant derezzing.
+* Hitting a jetwall or boundary wall causes the player to lose half a life (**-0.5 lives**) instead of instant derezzing.
 * However, if the arena is an **open-type grid** (no boundaries), falling off results in the loss of all remaining lives.
 * Provide **three predesigned arenas** and **one randomly generated arena** option.
 * These arenas can differ in layout, speed ramp placement, and obstacle arrangement.
@@ -35,7 +35,7 @@ Your project should strike a balance between story progression and gameplay mech
 
 #### 2.2.1 Create 5 archetypes
 
-1. Create two character classes based on the information provided in `characters.txt`. This file contains the names of characters along with their initial attributes, including `speed`, `handling`, `lives`, 'discsOwned' and `experiencePoints`. When a player creates a new character, the character's initial attributes should be determined by the data in `character.txt`.
+1. Create two character classes based on the information provided in characters.txt. This file contains the names of characters along with their initial attributes, including speed, handling, lives, discsOwned, and experiencePoints. When a player creates a new character, the character's initial attributes should be determined by the data in characters.txt.
 
 2. `Characters` class should include a method called `levelUp()`.
 
@@ -108,7 +108,7 @@ Enemy AI behavior varies according to difficulty level. At lower levels, enemies
 Implement levels of AI difficulty:
 - Koura → Easy → 10 XP - random but basic movement patterns.
 - Sark → Medium → 100 XP - moderately intelligent, avoids walls, predicts player path.
-- Rinzler → Hard → 500 XP - clever, makes strategic movies and collaborates.
+- Rinzler → Hard → 500 XP - clever, makes strategic moves and collaborates.
 - Clu → Impossible → 1000 XP - brilliant, unpredictable movement with logical but non-deterministic decisions.
 
 Each bot must:
@@ -119,7 +119,7 @@ Each bot must:
 
 
 
-### 2.4 - Disc and Capture System (2.5 marks)
+### 2.4 - Collision and Disc Combat System (2.5 marks)
 
 Discs are the core combat mechanic in Tron Light Cycles. Each player or enemy wields one identity disc.
 
@@ -133,81 +133,63 @@ Discs are the core combat mechanic in Tron Light Cycles. Each player or enemy wi
    - Enemies cannot pick up discs belonging to the player or other teams.
 3. Effects
    - Being struck by a disc results in -1 life.
-   - Colliding with a jetwall reduces 0.5 HP.
+   - Colliding with a jetwall reduces 0.5 lives.
    - Falling off an open arena removes all lives instantly.
 4. Skill Variations
    - As players level up, discs may travel faster or gain unique effects (e.g., ricochet, extended range).
    - Disc cooldown time may decrease with handling improvements.
 5. You are not restricted to follow the following design. It only serves as a reference.
 
+
+
+### 2.5 Arena-based real-time battle system (2D Light Cycle gameplay) (3 marks)
+
+Now that characters, enemies, and disc mechanics are implemented, the next step is to design the core arena gameplay loop — the heart of FOP Tron. This system replaces traditional turn-based or text-based battles with a dynamic, real-time 2D light cycle arena where players and AI compete to survive on the Grid.
+
+2.5.1 Core Mechanics
+1. Each round begins by spawning the player and AI-controlled enemies at a random quadrant within the arena.
+
+2. Both players and enemies can perform continuous real-time actions such as:
+- Using speed ramps or evasive manoeuvres (if unlocked).
+- Moving across the grid (WASD controls).
+- (Disc mechanics are defined separately in §2.4.)
+
+3. A round continues until one of the following occurs:
+- The player loses all lives,
+- All enemies are derezzed, or
+- The player manually exits the game.
+
+2.5.2 Collision and Event Logic
+- Jetwall Collisions: Contact with any wall or jetwall reduces 0.5 lives.
+- Disc Impacts: Being struck by a disc costs 1 life.
+- Arena Boundaries: In open-grid arenas, falling off removes all remaining lives instantly.
+- AI Mistakes: Enemies can make human-like pathing errors, such as turning too late or hitting their own jetwalls, for realism.
+
+2.5.3 Visual Feedback and HUD
+A real-time Heads-Up Display (HUD) should display player stats such as:
+- Lives 
+- XP
+- Active discs
+- Arena messages or event logs
+
+Example event feedback:
 ```md
-Warrior
---> HP: [:::::           ] (45 / 60)
---> MP: [//////////////  ] (80 / 100)
-+-------------------------------------------------------------+
-OPERATION: 1 / 3
-
->> Starter
-[S1] Attack
-[S2] Defend
-[S3] Heal                   < -20 MP, 0 / 3 CD, +200 HP, ->
-[S5] Escape
-
->> spells
-[A1] Roaring                < -10 MP, 2 / 3 CD,    0 HP, Cast silence>
-[A2] <Locked - 10>
-[A3] <Locked - 15>
-+-------------------------------------------------------------+
-```
-
-### 2.5 Round-based Battle System (3 marks)
-
-Now that we have characters, enemies, and discs in place, the next step is to implement the round-based arena system. In a text-based RPG game, players are allowed to engage in round-based battles through interfaces.
-
-1. In each round, both players and AI-controlled enemies can make their moves, such as changing direction, throwing discs, or recapturing them.
-
-2. The round continues until:
-    - The player loses all lives,
-    - All enemies are derezzed, or
-    - The player chooses to exit the game.
-
-3. Players can maneuver strategically, aim discs, or bait enemies into colliding with jetwalls.
-
-4. The interface should clearly display the player’s HP, XP, number of active discs, and arena events.
-
 > Tron deflects Rinzler’s disc!
-> Sark collides with his own jetwall (-0.5 HP)!
+> Sark collides with his own jetwall (-0.5 lives)!
 > You recaptured your disc — energy restored!
-
-5. Enemy AI should automatically respond to player movements. Depending on difficulty, they may choose to pursue, evade, or set traps with their jetwalls.
-
-6. The arena system should provide concise but vivid feedback after each action, allowing players to easily understand the outcome of every turn.
-
-```md
-> You have HIT the skeleton warrior, causing 151 damage!
-
-Skeleton Warrior
---> HP: [::              ] (27 / 60)
---> MP: [//////////////  ] (80 / 100)
-
-> CRITICAL! Skeleton Warrior has SLASHED you for 57 damage!
-
-Warrior
---> HP: [:::::           ] (45 / 60)
---> MP: [//////////////  ] (80 / 100)
-+-------------------------------------------------------------+
->> Starter
-[S1] Attack
-[S2] Defend
-[S3] Heal                   < -20 MP, 0 / 3 CD, +200 HP, ->
-[S5] Escape
-
->> spells
-[A1] Rabid Lunge            < -10 MP, 2 / 3 CD,    0 HP, Cast silence>
-[A2] <Locked - 10>
-[A3] <Locked - 15>
-+-------------------------------------------------------------+
+> CLU derezzed. +500 XP earned!
 ```
+
+Keep all combat outcomes visually concise and in Tron’s neon aesthetic (blue for player actions, red for enemies, gold for achievements).
+
+2.5.4 Enemy AI Behavior
+
+AI difficulty levels are defined for each enemy type (Koura: Easy, Sark: Medium, Rinzler: Hard, Clu: Impossible). Detailed behavior and strategic logic are described in §2.3 Designing Enemies only for reference.
+
+2.5.5 Round Flow and Victory Conditions
+- When all enemies are derezzed, the player wins the round and earns XP.
+- Leveling up grants permanent stat boosts and may unlock new arenas, characters, or story chapters.
+- The game then transitions to a cutscene or story segment (if implemented) before the next round begins.
 
 ## 3 - Extra Feature Requirement (Total - 4 marks)
 
@@ -291,7 +273,7 @@ class Hero {
 }
 ```
 
-Instead of duplicating the variables `healthPoints`, `mana`, and `status`, we can create a suitable parent class to achieve abstraction. For instance:
+Instead of duplicating the variables `lives`, `mana`, and `status`, we can create a suitable parent class to achieve abstraction. For instance:
 
 ```java
 class Character {

@@ -132,7 +132,7 @@ Each bot must:
 
 ### 2.4 - Collision and Disc Combat System (2.5 marks)
 
-![RedIdentityDisc](RedIdentityDisc.png)
+![RedIdentityDisc](image/RedIdentityDisc.png)
 
 Discs are the core combat mechanic in Tron Light Cycles. Each player or enemy wields one or more identity discs.
 

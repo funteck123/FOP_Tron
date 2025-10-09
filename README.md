@@ -1,22 +1,26 @@
+<style> body { font-size: 10pt; line-height: 1.05; margin: 0.7in 0.6in; } h1 { font-size: 20pt; } h2 { font-size: 16pt; } h3 { font-size: 12pt; } h4 { font-size: 10pt; } table { font-size: 8pt; } code, pre { font-size: 8pt; } </style>
+
+
+
 # FOP Tron
 
 Resources: Related files for this assignment are available here → [FOP_Tron GitHub Repository](https://github.com/funteck123/FOP_Tron/tree/main).
 
-As of your Fundamental of Programming (FOP) Assignment, you are required to design and develop a 2D interactive game inspired by the Tron: Legacy (2010) and [Tron (1982 movie and video game)](https://en.wikipedia.org/wiki/Tron_(video_game)).
+As your WIX1002 Assignment, ou are required to design and develop a 2D interactive game inspired by the Tron: Legacy (2010) and [Tron (1982 movie and video game)](https://en.wikipedia.org/wiki/Tron_(video_game)).
 
 <div style="text-align:center">
-    <img src="image/clu_disc_on_floor_crop_2.jpg" alt="Clu Disc on Floor" width="620">
+    <img src="image/clu_disc_on_floor_crop_2.jpg" alt="Clu Disc on Floor" width="420">
 </div>
 
 ## 1 - Introduction
 
 <div style="text-align:center">
-    <img src="image/tron-uprising-argon-city.jpg" alt="Tron City Intro" width="620">
+    <img src="image/tron-uprising-argon-city.jpg" alt="Tron City Intro" width="420">
 </div>
 
 In this assignment, your task is to create a 2D interactive arena game that combines strategic gameplay with narrative storytelling. Players will control a futuristic Light Cycle that leaves behind a glowing energy trail (jetwall) as it moves through the Grid. The goal is simple — outmaneuver your opponents and make them collide with jetwalls, walls, or each other to be the last cycle standing.
 
-However, this is not merely a game about survival. You are also tasked to implement a simple storyline, where narrative elements and cutscenes based on the Tron universe are progressively revealed through gameplay. Players will unlock new story chapters, achievements, and characters as they level up which lead to alternate story endings.
+You are also tasked to implement a simple storyline, where narrative elements and cutscenes based on the Tron universe are progressively revealed through gameplay. Players will unlock new story chapters, achievements, and characters as they level up which lead to alternate story endings.
 
 
 
@@ -74,7 +78,7 @@ Add 1 or 2 extra features to get additional marks. It is NOT compulsory to imple
 ### 2.1 Arena Design (0.5 mark)
 
 <div style="text-align:center">
-    <img src="image/Snake_trs-80.jpg" alt="Arena-based real-time battle system" width="400">
+    <img src="image/Snake_trs-80.jpg" alt="Arena-based real-time battle system" width="380">
 </div>
 
 * Design a **40x40 grid-based arena** that represents the Light Cycle battlefield.
@@ -93,7 +97,7 @@ Add 1 or 2 extra features to get additional marks. It is NOT compulsory to imple
 ### 2.2 Creating characters (1 mark)
 
 <div style="text-align:center">
-    <img src="image/tron_characters_crop_2.jpg" alt="Tron Characters" width="450">
+    <img src="image/tron_characters_crop_2.jpg" alt="Tron Characters" width="380">
 </div>
 
 #### 2.2.1 Design Playable Characters
@@ -207,7 +211,7 @@ Discs are the core combat mechanic in Tron Light Cycles. Each player or enemy wi
 ### 2.5 Arena-based real-time battle system (2D Light Cycle gameplay) (1.0 marks)
 
 <div style="text-align:center">
-    <img src="image/Classictronlegacylightcycles.webp" alt="Classic Tron Legacy Light Cycles" width="620">
+    <img src="image/Classictronlegacylightcycles.webp" alt="Classic Tron Legacy Light Cycles" width="400">
 </div>
 
 Now that characters, enemies, and disc mechanics are implemented, the next step is to design the core arena gameplay loop — the heart of FOP Tron. This system replaces traditional turn-based or text-based battles with a dynamic, real-time 2D light cycle arena where players and AI Bots compete to survive on the Grid.
@@ -310,8 +314,8 @@ Adding visual flair and a sense of accomplishment can greatly enhance player eng
 1. Implement sound effects and audio tracks.
 2. Include colored text, ASCII visuals or glowing UI panels for menus and battle interfaces to reflect Tron’s neon aesthetic.
 3. Introduce achievement notifications, such as:
-    - “🏆 Survived 3 Rounds Against Clu!”
-    - “✨ Defeated Rinzler Without Losing a Life!”
+    - “Survived 3 Rounds Against Clu!”
+    - “Defeated Rinzler Without Losing a Life!”
 
 Feel free to incorporate any other features that you find interesting! Don't confine yourselves to the assignment question. Get as creative as you can, because there are no limits!
 
@@ -363,7 +367,7 @@ By refactoring the code in this manner, we indeed improve scalability and mainta
 #### 4.1.2 Single Responsibility Principle (SRP)
 
 <div style="text-align:center">
-    <img src="image/srp.png" alt="Single Responsibility Principle" width="400" height="250">
+    <img src="image/srp.png" alt="Single Responsibility Principle" width="300" height="200">
 </div>
 
 The Single Responsibility Principle is a fundamental programming principle that states that *A class should have only one reason to change.* It emphasizes that each class should be responsible for a single behavior or functionality.
@@ -384,7 +388,7 @@ It's quite common for newcomers who have no prior experience in programming to c
 Therefore, it's advisable to refrain from using platforms like WhatsApp or Telegram for exchanging .zip files. Instead, consider using version control systems like Git and platforms like GitHub or Bitbucket, which are designed for efficient and collaborative code management.
 
 <div style="text-align:center">
-    <img src="image/git-and-github.png" alt="Image Description" width="400" height="220">
+    <img src="image/git-and-github.png" alt="Image Description" width="150" height="75">
 </div>
 
 
@@ -481,7 +485,7 @@ Must read:
 - [Atlassian Git Tutorials – Resolve Merge Conflicts](https://www.atlassian.com/git/tutorials/using-branches/merge-conflicts)
 - [Git Rebase Explained – freeCodeCamp](https://www.freecodecamp.org/news/git-rebase-and-merge-explained/)
 
-## 5 - 📚 Recommended Resources:
+## 5 - Recommended Resources:
 
 ### 1. Turn-Based / Text Game 
 
@@ -516,12 +520,10 @@ Must read:
 ## 6 - Contact Me
 
 For any clarifications or issues, contact:  
+
 **Mr. Mohammad Shahid Akhtar**  
-📱 WhatsApp / Telegram: 014-8784386  
-📧 Email: 22052133@siswa.um.edu.my
-
-
-If there’s no response within 24 hours, please send a polite reminder.
+WhatsApp / Telegram: 014-8784386  
+Email: 22052133@siswa.um.edu.my
 
 _I aim to help you master Fundamentals of Programming — while allowing creativity and storytelling to shine.  It is meant to be fun, flexible and def not tough!_
 

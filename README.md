@@ -430,7 +430,7 @@ If you are seeking for the possible inspiration or tutorials, you might watch th
 2. Artificial Intelligence Pathfinding for Grid-Based Games
 3. SQLite Database Integration in Java Applications
 4. Version Control with Git and GitHub
-5. The Making of Tron (1982) – Film Reference
+5. Tron (1982/2010) – Film and Arcade Game Reference
 
 ### 5.1 Credit
 [FOP Valley](https://github.com/fyiernzy/FOP_Valley/tree/main)

@@ -20,7 +20,7 @@ Your project should strike a balance between story progression and gameplay mech
 
 ### 2.1 Arena Design (0.5 mark)
 
-![Arena-based real-time battle system](Snake_trs-80.jpg)
+![Arena-based real-time battle system](image/Snake_trs-80.jpg)
 
 * Design a **40x40 grid-based arena** that represents the Light Cycle battlefield.
 * Players must be able to move their cycles using the **W, A, S, and D keys**:

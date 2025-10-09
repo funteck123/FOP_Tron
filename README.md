@@ -4,7 +4,6 @@ All the resources mentioned in this assignment can be found at [Here](https://gi
 
 As of your Fundamental of Programming (FOP) Assignment, you are required to design and develop a 2D interactive game inspired by the Tron: Legacy (2010) and [Tron (1982 movie and video game)](https://en.wikipedia.org/wiki/Tron_(video_game)).
 
-![Classic tron legacy light cycles](image/Classictronlegacylightcycles.webp)
 
 ## 1 - Introduction
 
@@ -19,6 +18,8 @@ Your project should strike a balance between story progression and gameplay mech
 ## 2 - Basic Requirement (Total - 8 marks)
 
 ### 2.1 Arena Design (0.5 mark)
+
+![Classic tron legacy light cycles](image/Classictronlegacylightcycles.webp)
 
 * Design a **40x40 grid-based arena** that represents the Light Cycle battlefield.
 * Players must be able to move their cycles using the **W, A, S, and D keys**:

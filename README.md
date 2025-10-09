@@ -5,13 +5,13 @@ All the resources mentioned in this assignment can be found at [Here](https://gi
 As of your Fundamental of Programming (FOP) Assignment, you are required to design and develop a 2D interactive game inspired by the Tron: Legacy (2010) and [Tron (1982 movie and video game)](https://en.wikipedia.org/wiki/Tron_(video_game)).
 
 <div style="text-align:center">
-    <img src="image/clu_disc_on_floor_crop_2.jpg" alt="Clu Disc on Floor" width="320">
+    <img src="image/clu_disc_on_floor_crop_2.jpg" alt="Clu Disc on Floor" width="400">
 </div>
 
 ## 1 - Introduction
 
 <div style="text-align:center">
-    <img src="image/tron-uprising-argon-city.jpg" alt="Tron City Intro" width="320">
+    <img src="image/tron-uprising-argon-city.jpg" alt="Tron City Intro" width="400">
 </div>
 
 In this assignment, your task is to create a 2D interactive arena game that combines strategic gameplay with narrative storytelling. Players will control a futuristic Light Cycle that leaves behind a glowing energy trail (jetwall) as it moves through the Grid. The goal is simple — outmaneuver your opponents and make them collide with jetwalls, walls, or each other to be the last cycle standing.
@@ -74,7 +74,7 @@ Add 1 or 2 extra features to get additional marks. It is NOT compulsory to imple
 ### 2.1 Arena Design (0.5 mark)
 
 <div style="text-align:center">
-    <img src="image/Snake_trs-80.jpg" alt="Arena-based real-time battle system" width="320">
+    <img src="image/Snake_trs-80.jpg" alt="Arena-based real-time battle system" width="400">
 </div>
 
 * Design a **40x40 grid-based arena** that represents the Light Cycle battlefield.
@@ -93,7 +93,7 @@ Add 1 or 2 extra features to get additional marks. It is NOT compulsory to imple
 ### 2.2 Creating characters (1 marks)
 
 <div style="text-align:center">
-    <img src="image/tron_characters_crop_2.jpg" alt="Tron Characters" width="320">
+    <img src="image/tron_characters_crop_2.jpg" alt="Tron Characters" width="400">
 </div>
 
 #### 2.2.1 Design Playable Characters
@@ -192,7 +192,7 @@ Each bot must:
 ### 2.4 Collision and Disc Combat System (1.5 marks)
 
 <div style="text-align:center">
-    <img src="image/RedIdentityDisc-removebg-preview.png" alt="Red Identity Disc" width="320">
+    <img src="image/RedIdentityDisc-removebg-preview.png" alt="Red Identity Disc" width="400">
 </div>
 
 Discs are the core combat mechanic in Tron Light Cycles. Each player or enemy wields one or more identity discs.
@@ -219,7 +219,7 @@ Discs are the core combat mechanic in Tron Light Cycles. Each player or enemy wi
 ### 2.5 Arena-based real-time battle system (2D Light Cycle gameplay) (1.0 marks)
 
 <div style="text-align:center">
-    <img src="image/Classictronlegacylightcycles.webp" alt="Classic Tron Legacy Light Cycles" width="320">
+    <img src="image/Classictronlegacylightcycles.webp" alt="Classic Tron Legacy Light Cycles" width="400">
 </div>
 
 Now that characters, enemies, and disc mechanics are implemented, the next step is to design the core arena gameplay loop — the heart of FOP Tron. This system replaces traditional turn-based or text-based battles with a dynamic, real-time 2D light cycle arena where players and AI Bots compete to survive on the Grid.
@@ -258,7 +258,7 @@ Keep all combat outcomes visually concise and in Tron’s neon aesthetic (blue f
 2.5.3 Enemy AI Bot Behavior
 
 <div style="text-align:center">
-    <img src="image/alphazero.webp" alt="AlphaZero AI Inspiration" width="320">
+    <img src="image/alphazero.webp" alt="AlphaZero AI Inspiration" width="400">
 </div>
 
 AI difficulty levels are defined for each enemy type (Koura: Easy, Sark: Medium, Rinzler: Hard, Clu: Impossible). Detailed behavior and strategic logic are described in §2.3 Designing Enemies (for sample reference only).
@@ -292,11 +292,11 @@ Consider using knowledge acquired in File I/O for implementing this functionalit
 ### 3.2 Story Progression and Visual Cutscenes (2 marks)
 
 <div style="text-align:center">
-    <img src="image/creation_of_clu.jpg" alt="Making of Clu" width="320">
+    <img src="image/creation_of_clu.jpg" alt="Making of Clu" width="400">
 </div>
 
 <div style="text-align:center">
-    <img src="image/Narrative_choice.jpg" alt="Narrative Choice" width="320">
+    <img src="image/Narrative_choice.jpg" alt="Narrative Choice" width="400">
 </div>
 
 Mistakes aren’t the only thing that can interrupt a good game — lack of story flow can too. To create a truly engaging Tron experience, implement a story engine that reveals narrative sequences between gameplay stages.
@@ -560,7 +560,7 @@ _I aim to help you master Fundamentals of Programming — while allowing creativ
 _Build your own Grid (a digital frontier), and may your Light Cycle be the last one standing._
 
 <div style="text-align:center">
-    <img src="image/tron_I_fight_for_the_users_1.gif" alt="Tron Quote - I Fight for the Users" width="320">
+    <img src="image/tron_I_fight_for_the_users_1.gif" alt="Tron Quote - I Fight for the Users" width="400">
 </div>
 
 ### 5.1 Credit

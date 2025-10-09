@@ -132,7 +132,7 @@ Each bot must:
 
 ### 2.4 - Collision and Disc Combat System (2.5 marks)
 
-![RedIdentityDisc](image/RedIdentityDisc.png)
+![RedIdentityDisc](image/RedIdentityDisc-removebg-preview.png)
 
 Discs are the core combat mechanic in Tron Light Cycles. Each player or enemy wields one or more identity discs.
 
@@ -227,7 +227,8 @@ Consider using a database and the knowledge you have acquired in File I/O for im
 
 ### 3.2 Story Progression and Visual Cutscenes (2 mark)
 
-
+![Making_of_Clu](image/creation_of_clu.jpg)
+![Narrative_choice](image/Narrative_choice.jpg)
 
 Mistakes aren’t the only thing that can interrupt a good game — lack of story flow can too. To create a truly engaging Tron experience, implement a story engine that reveals narrative sequences between gameplay stages.
 

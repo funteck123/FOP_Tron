@@ -56,8 +56,8 @@ Each playable character offers a distinct experience and storyline.
 
 | Character   | Color | Speed     | Handling    | Description                                    |
 |---------|-------|-----------|------------|------------------------------------------------|
-| Tron     | Gold  | Moderate | Balanced | The original defender of the Grid.   |
-| Kevin | Red   | Very High | Smooth      | The creator — stable and resilient.          |
+| Tron     | Blue  | Moderate | Balanced | The original defender of the Grid.   |
+| Kevin | White   | Very High | Smooth      | The creator — stable and resilient.          |
 
 Both characters share core properties such as speed, handling, lives, discsOwned, and experiencePoints. As they level up, their performance improves and new features such as light cycle variants, cutscenes, or storyline branches can be unlocked.
 

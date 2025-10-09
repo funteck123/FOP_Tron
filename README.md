@@ -4,6 +4,7 @@ All the resources mentioned in this assignment can be found at [Here](https://gi
 
 As of your Fundamental of Programming (FOP) Assignment, you are required to design and develop a 2D interactive game inspired by the Tron: Legacy (2010) and [Tron (1982 movie and video game)](https://en.wikipedia.org/wiki/Tron_(video_game)).
 
+![Clu Disc on Floor](image/clu_disc_on_floor_crop_2.jpg)
 
 ## 1 - Introduction
 
@@ -19,7 +20,7 @@ Your project should strike a balance between story progression and gameplay mech
 
 ### 2.1 Arena Design (0.5 mark)
 
-![Classic tron legacy light cycles](image/Classictronlegacylightcycles.webp)
+![Arena-based real-time battle system](Snake_trs-80.jpg)
 
 * Design a **40x40 grid-based arena** that represents the Light Cycle battlefield.
 * Players must be able to move their cycles using the **W, A, S, and D keys**:
@@ -87,6 +88,8 @@ You are encouraged to create cutscenes or visual sequences (static images or vid
 
 ### 2.3 - Design Enemies (1 marks)
 
+![Tron City Intro](image/tron-uprising-argon-city.avif)
+
 1. Design an Enemy superclass that represents AI-controlled opponents.
 Each enemy should have attributes such as speed, handling, and aggressionLevel.
 2. Design **5 unique enemies** that extend the `Enemy` class based on description in `enemies.txt`
@@ -129,7 +132,9 @@ Each bot must:
 
 ### 2.4 - Collision and Disc Combat System (2.5 marks)
 
-Discs are the core combat mechanic in Tron Light Cycles. Each player or enemy wields one identity disc.
+![RedIdentityDisc](RedIdentityDisc.png)
+
+Discs are the core combat mechanic in Tron Light Cycles. Each player or enemy wields one or more identity discs.
 
 1. Throwing and Recapture Mechanics
    - Players can throw their disc across a range of up to three grid units.
@@ -151,6 +156,8 @@ Discs are the core combat mechanic in Tron Light Cycles. Each player or enemy wi
 
 
 ### 2.5 Arena-based real-time battle system (2D Light Cycle gameplay) (3 marks)
+
+![Classic tron legacy light cycles](image/Classictronlegacylightcycles.webp)
 
 Now that characters, enemies, and disc mechanics are implemented, the next step is to design the core arena gameplay loop — the heart of FOP Tron. This system replaces traditional turn-based or text-based battles with a dynamic, real-time 2D light cycle arena where players and AI compete to survive on the Grid.
 
@@ -192,6 +199,8 @@ Keep all combat outcomes visually concise and in Tron’s neon aesthetic (blue f
 
 2.5.4 Enemy AI Behavior
 
+![alphazero](image/alphazero.webp)
+
 AI difficulty levels are defined for each enemy type (Koura: Easy, Sark: Medium, Rinzler: Hard, Clu: Impossible). Detailed behavior and strategic logic are described in §2.3 Designing Enemies only for reference.
 
 2.5.5 Round Flow and Victory Conditions
@@ -217,6 +226,8 @@ It would be a great pity if someone couldn’t save their game progress or compa
 Consider using a database and the knowledge you have acquired in File I/O for implementing this functionality.
 
 ### 3.2 Story Progression and Visual Cutscenes (2 mark)
+
+
 
 Mistakes aren’t the only thing that can interrupt a good game — lack of story flow can too. To create a truly engaging Tron experience, implement a story engine that reveals narrative sequences between gameplay stages.
 

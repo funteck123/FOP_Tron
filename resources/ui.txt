@@ -1,0 +1,15 @@
+# Title Screen
+==============================
+     F O P : T R O N
+==============================
+
+[1] Start Game
+[2] Load Game
+[3] Leaderboard
+[4] Exit
+
+# Color Codes
+Blue - Player
+Red - Enemy
+Gold - Achievement
+White - System message

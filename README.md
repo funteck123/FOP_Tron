@@ -12,7 +12,7 @@ As of your Fundamental of Programming (FOP) Assignment, you are required to desi
 
 In this assignment, your task is to create a 2D interactive arena game that combines strategic gameplay with narrative storytelling. Players will control a futuristic Light Cycle that leaves behind a glowing energy trail (jetwall) as it moves through the Grid. The goal is simple — outmaneuver your opponents and make them collide with jetwalls, walls, or each other to be the last cycle standing.
 
-However, this is not merely a game about survival. You are also tasked to implement a simple storyline, where narrative elements and cutscenes based on the Tron universe are progressively revealed through gameplay. Players will unlock new story chapters, achievements, and characters as they level up.
+However, this is not merely a game about survival. You are also tasked to implement a simple storyline, where narrative elements and cutscenes based on the Tron universe are progressively revealed through gameplay. Players will unlock new story chapters, achievements, and characters as they level up which lead to alternate story endings.
 
 
 
@@ -190,7 +190,7 @@ Discs are the core combat mechanic in Tron Light Cycles. Each player or enemy wi
 1. Throwing and Recapture Mechanics
    - Players can throw their disc across a range of up to three grid units.
    - Once thrown, the disc stays where it lands until recaptured.
-   - Players cannot throw another disc until one is retrieved.
+   - Players can throw another disc with a 5 second cooldown unless they run out of discs.
    - A player may recapture their own discs or teammate discs of the same color.
 2. Enemy Discs
    - Enemy bots can throw and recapture their own discs as well.
@@ -202,7 +202,7 @@ Discs are the core combat mechanic in Tron Light Cycles. Each player or enemy wi
 4. Skill Variations
    - As players level up, discs may travel faster or gain unique effects (e.g., ricochet, extended range).
    - Disc cooldown time may decrease with handling improvements.
-5. You are not restricted to follow the following design. It only serves as a reference.
+5. You are not restricted to following this game design. This serves only as a reference.
 
 
 
@@ -225,13 +225,8 @@ Now that characters, enemies, and disc mechanics are implemented, the next step 
     - All enemies are derezzed, or
     - The player manually exits the game.
 
-2.5.2 Collision and Event Logic
-- Jetwall Collisions: Contact with any wall or jetwall reduces 0.5 lives.
-- Disc Impacts: Being struck by a disc costs 1 life.
-- Arena Boundaries: In open-grid arenas, falling off removes all remaining lives instantly.
 
-
-2.5.3 Visual Feedback and HUD
+2.5.2 Visual Feedback and HUD
 A real-time Heads-Up Display (HUD) should display player stats such as:
 - Lives 
 - XP
@@ -248,16 +243,16 @@ Example event feedback:
 
 Keep all combat outcomes visually concise and in Tron’s neon aesthetic (blue for player actions, red for enemies, gold for achievements).
 
-2.5.4 Enemy AI Bot Behavior
+2.5.3 Enemy AI Bot Behavior
 
 ![alphazero](image/alphazero.webp)
 
 AI difficulty levels are defined for each enemy type (Koura: Easy, Sark: Medium, Rinzler: Hard, Clu: Impossible). Detailed behavior and strategic logic are described in §2.3 Designing Enemies (for sample reference only).
 
-2.5.5 Round Flow and Victory Conditions
+2.5.4 Round Flow and Victory Conditions
 - When all enemies are derezzed, the player wins the round and earns XP.
 - Leveling up grants permanent stat boosts and may unlock new arenas, characters, or story chapters.
-- The game then transitions to a cutscene or story segment (if implemented) before the next round begins.
+- The game then transitions to a cutscene or turn-based story choices segment (if implemented) before the next round begins.
 
 ### 2.6 OOP & File Handling (0.5 marks)
 Proper use of abstraction, inheritance, and modular code.
@@ -271,14 +266,14 @@ It would be a great pity if someone couldn’t save their game progress or compa
 
 1. To enhance the player experience, implement a save system that records the player’s progress — including level, XP, and achievements — allowing them to continue from where they left off.
 2. The game should prompt players to save before exiting, reminding them to preserve their current state.
-3. Implement a leaderboard database (SQLite or MySQL) that stores:
+3. Implement a leaderboard (CSV or SQLite or MySQL) that stores:
     - Player name
     - Highest level achieved
     - Total score
     - Date of completion
 4. Provide a Top 10 leaderboard accessible from the main menu to motivate players to improve their performance.
 
-Consider using a database and the knowledge you have acquired in File I/O for implementing this functionality.
+Consider using knowledge acquired in File I/O for implementing this functionality.
 
 ### 3.2 Story Progression and Visual Cutscenes (2 marks)
 
@@ -287,13 +282,12 @@ Consider using a database and the knowledge you have acquired in File I/O for im
 
 Mistakes aren’t the only thing that can interrupt a good game — lack of story flow can too. To create a truly engaging Tron experience, implement a story engine that reveals narrative sequences between gameplay stages.
 
-1. The storyline should align with the Tron (1982/2010) universe — gradually revealing the history of the Grid, the rise of Clu, and Kevin Flynn’s legacy.
-2. Players make choices that influence dialogue or unlock achievements and alternate story outcomes.
+1. The storyline should align with the Tron (1982/2010) universe — gradually revealing the history of the Grid, the rise of Clu, and Kevin Flynn’s legacy. Flexible.
+2. Players make choices that influence dialogue or unlock achievements and **alternate story outcomes**.
 3. Cutscenes can be displayed as:
     - Text-based story transitions,
     - Static 2D art scenes, or
     - Embedded video clips (short and immersive).
-
 4. Story content should be stored externally in a file (e.g., story.txt) to ensure modularity and easy updates.
 
 This feature bridges gameplay and storytelling, offering players a reason to keep exploring the Grid beyond just survival.

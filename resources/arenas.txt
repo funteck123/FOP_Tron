@@ -1,0 +1,5 @@
+# ArenaName | Type | Size | Description
+ClassicGrid | Closed | 40x40 | Standard square arena with solid walls.
+NeonMaze | Closed | 40x40 | Maze-like structure with narrow corridors.
+OpenFrontier | Open | 40x40 | No boundaries — fall to derez.
+Procedural | Random | 40x40 | Randomly generated layout using seed.

@@ -498,5 +498,9 @@ Build your own Grid (a digital frontier), and may your Light Cycle be the last o
 ### 5.1 Credit
 [FOP Valley](https://github.com/fyiernzy/FOP_Valley/tree/main)
 Ng Zhi Yang
-@fyiernzy
+@fyiernzy for assignment inspiration, template and content.
 
+
+### 5.1 Credit
+Sections of this document, particularly Section 4, were adapted from [FOP Valley](https://github.com/fyiernzy/FOP_Valley/tree/main).  
+Credits to **Ng Zhi Yang (@fyiernzy)** for the content template and inspiration.

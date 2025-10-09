@@ -6,7 +6,7 @@ As of your Fundamental of Programming (FOP) Assignment, you are required to desi
 
 ## 1 - Introduction
 
-![A Slime](image/slime.png)
+![Light Cycle](image/lightcycle.png)
 
 In this assignment, your task is to create a 2D interactive arena game that combines strategic gameplay with narrative storytelling. Players will control a futuristic Light Cycle that leaves behind a glowing energy trail (jetwall) as it moves through the Grid. The goal is simple — outmaneuver your opponents and make them collide with jetwalls, walls, or each other to be the last cycle standing.
 
@@ -49,9 +49,9 @@ class Tron extends Character {
 
 Each playable character offers a distinct experience. 
 
-Character	Color	Speed	Handling	Description Playable
-Tron	Blue	High	Balanced	The original defender of the Grid. Yes
-Kevin Flynn	White	Moderate	Smooth	The creator — stable and resilient. Yes
+Character	Color	Speed	Handling	Description 
+Tron	Blue	High	Balanced	The original defender of the Grid. 
+Kevin Flynn	White	Moderate	Smooth	The creator — stable and resilient. 
 
 Both characters share core properties such as speed, handling, lives, discsOwned, and experiencePoints. As they level up, their performance improves and new features such as light cycle variants, cutscenes, or storyline branches can be unlocked.
 
@@ -97,13 +97,13 @@ class Enemy {
 }
 
 
-Character	Color	Speed	Handling	Description Playable
+Enemy	Color	Speed	Handling	Description 
 Clu	Gold	Very High	Aggressive	Corrupted intelligence, fast and strategic. No
 Rinzler	Red	Very High	Sharp	Silent hunter — tactical and deadly. No
 Sark	Yellow	Medium	Predictable	Enforcer AI, standard opponent. No
 Koura	Green	Low	Erratic	Lowest-level AI, unpredictable but weak. No
 
-Enemy AI behavior varies according to difficulty level. At lower levels, enemies move in predictable patterns. As difficulty increases, opponents may attempt to anticipate the player’s direction, flank from the sides, or recapture their own discs to reengage in combat.
+Enemy AI behavior varies according to difficulty level. At lower levels, enemies move in predictable patterns. As difficulty increases, opponents may attempt to anticipate the player’s direction, make strategies with teammates, flank from the sides, or recapture their own discs to reengage in combat.
 
 Implement levels of AI difficulty:
 - Koura → Easy → 10 XP - random but basic movement patterns.
@@ -260,35 +260,37 @@ Feel free to incorporate any other features that you find interesting! Don't con
 You need to apply the principles of Object-Oriented Programming (OOP) in your code to eliminate redundant code. It is important to grasp the concept of abstraction and effectively utilize classes, abstract classes, interfaces, and enums. Let's consider the following code as an example:
 
 ```java
-class Monster {
-    int healthPoints;
-    int mana;
-    List<String> status;    
+
+class Player {
+   int lives;
+   int speed;
+   int discsOwned;
+   List<String> status;
 }
 
-class Hero {
-    int healthPoints;
-    int mana;
-    List<String> status;
+class Enemy {
+   int lives;
+   int speed;
+   int discsOwned;
+   List<String> status;
 }
+
+
 ```
 
-Instead of duplicating the variables `lives`, `mana`, and `status`, we can create a suitable parent class to achieve abstraction. For instance:
+Instead of duplicating the variables `lives`, `speed`, 'status', and `discsOwned`, we can create a suitable parent class to achieve abstraction. For instance:
 
 ```java
 class Character {
-    int healthPoints;
-    int mana;
-    List<String> status;
+   int lives;
+   int speed;
+   int discsOwned;
+   List<String> status;
 }
 
-class Monster extends Character {
+class PlayerCycle extends Character { }
 
-}
-
-class Hero extends Character {
-
-}
+class EnemyCycle extends Character { }
 ```
 
 By refactoring the code in this manner, we indeed improve scalability and maintainability.
@@ -301,7 +303,7 @@ By refactoring the code in this manner, we indeed improve scalability and mainta
 
 The Single Responsibility Principle is a fundamental programming principle that states that *A class should have only one reason to change.* It emphasizes that each class should be responsible for a single behavior or functionality.
 
-In the given example, while applying OOP, it is important to ensure that each class is responsible for its own specific behavior. For instance, a `PlayerCycle` class may be responsible for attacking monsters or healing teammates, but it should not handle tasks unrelated to its core purpose, such as interacting with the operating system or managing database connections. Applying the SRP helps in maintaining cohesive and focused classes.
+In the given example, while applying OOP, it is important to ensure that each class is responsible for its own specific behavior. For instance, a PlayerCycle class may be responsible for throwing discs or avoiding jetwalls, but should not handle unrelated tasks like database management or file saving.
 
 ### 4.2 Using Git and Github for Cooperation
 

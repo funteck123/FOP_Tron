@@ -15,76 +15,55 @@ In this assignment, your task is to create a 2D interactive arena game that comb
 However, this is not merely a game about survival. You are also tasked to implement a simple storyline, where narrative elements and cutscenes based on the Tron universe are progressively revealed through gameplay. Players will unlock new story chapters, achievements, and characters as they level up.
 
 
-Your program should demonstrate mastery of:
-- **Logic flow**  
-- **Object-Oriented Programming (OOP)**  
-- **File I/O handling** 
-- (Extra) **Basic AI bots (No LLMs or APIs) and simple graphics (Java Swing or ASCII)**  
-
 
 ### 1.1 Overview
 
-## C. Basic Requirements (8 marks)
+#### A. Objective
 
-| Feature | Marks | Description | Notes / Suggestions |
-|----------|:-----:|--------------|----------------------|
-| **Arena Design** | 0.5 | Create a **40×40 grid** arena where players move using `W`, `A`, `S`, `D`. Hitting jetwalls or arena boundaries reduces lives. Include 3 fixed arenas and 1 randomly generated arena. | Text-based or simple GUI accepted. |
-| **Playable Characters** | 1.0 | Implement 2 playable characters (`Tron`, `Kevin`) with attributes (speed, handling, lives, discsOwned, XP). Load initial stats from `characters.txt`. | Demonstrate File I/O – no hardcoding values. |
-| **Leveling Up System** | 1.0 | Implement XP-based leveling. Each level increases attributes and unlocks features. Cap at Level 99. | Keep algorithms simple (e.g., every 100 XP → +1 speed). |
-| **Enemy Design** | 1.0 | Create an `Enemy` superclass and at least **5 subclasses** (`Clu`, `Rinzler`, `Sark`, `Koura`, etc.) based on `enemies.txt`. Each enemy has different speed, handling, aggression. | Randomize enemy positions each round. |
-| **Collision & Disc System** | 2.5 | Implement collision between jetwalls, discs, and boundaries. Discs can be thrown, hit enemies, and be recaptured. Hitting causes life loss. | You may simplify disc mechanics if needed. |
-| **Arena Gameplay Loop** | 1.5 | Create a real-time or turn-based **battle loop**: spawn player/enemies, handle movement, detect collisions, and determine victory/defeat. Display stats and messages (HUD). | ASCII text or basic animation acceptable. |
-| **OOP & File Handling** | 0.5 | Use inheritance, abstraction, and file I/O correctly. Demonstrate modular design (separate classes). | Include proper comments and readable code. |
+Design and develop a **Tron-inspired 2D grid game** in **Java**, demonstrating:
 
----
+- Logic flow and program structure  
+- Object-Oriented Programming (OOP)  
+- File I/O handling  
+- *(Optional)* Basic AI and simple graphics (Swing or ASCII)
 
-## D. Additional Features (4 marks)
-
-| Feature | Marks | Description | Notes / Suggestions |
-|----------|:-----:|--------------|----------------------|
-| **Save Game & Leaderboard** | 1.0 | Implement save/load functionality and a **Top 10 leaderboard** using a file or SQLite. Store player name, level, score, and date. | Prompt user to save before exit. |
-| **Story Progression & Cutscenes** | 2.0 | Implement story text or simple cutscenes that unlock after each level or boss defeat. Load story content from `story.txt`. | Text-based is sufficient; images/videos optional. |
-| **Random Arena Generator** | 0.5 | Generate random grid layouts each game. Ensure logical paths and playability. | Use random seed or algorithmic generation. |
-| **Visual & Achievement Enhancements** | 0.5 | Add colored text, ASCII art UI, and achievements such as “🏆 Defeated Clu!” | Load achievements/UI text from resource files. |
+Your goal is to build a playable **Light Cycle Arena** game with leveling, enemies, and story progression.
 
 ---
 
-## C. Basic Requirements (8 marks)
+#### B. Marks Distribution Summary
 
-| Feature | Marks | Description | Notes / Suggestions |
-|----------|:-----:|--------------|----------------------|
-| **Arena Design** | 0.5 | Create a **40×40 grid** arena where players move using `W`, `A`, `S`, `D`. Hitting jetwalls or arena boundaries reduces lives. Include 3 fixed arenas and 1 randomly generated arena. | Text-based or simple GUI accepted. |
-| **Playable Characters** | 1.0 | Implement 2 playable characters (`Tron`, `Kevin`) with attributes (speed, handling, lives, discsOwned, XP). Load initial stats from `characters.txt`. | Demonstrate File I/O – no hardcoding values. |
-| **Leveling Up System** | 1.0 | Implement XP-based leveling. Each level increases attributes and unlocks features. Cap at Level 99. | Keep algorithms simple (e.g., every 100 XP → +1 speed). |
-| **Enemy Design** | 1.0 | Create an `Enemy` superclass and at least **5 subclasses** (`Clu`, `Rinzler`, `Sark`, `Koura`, etc.) based on `enemies.txt`. Each enemy has different speed, handling, aggression. | Randomize enemy positions each round. |
-| **Collision & Disc System** | 2.5 | Implement collision between jetwalls, discs, and boundaries. Discs can be thrown, hit enemies, and be recaptured. Hitting causes life loss. | You may simplify disc mechanics if needed. |
-| **Arena Gameplay Loop** | 1.5 | Create a real-time or turn-based **battle loop**: spawn player/enemies, handle movement, detect collisions, and determine victory/defeat. Display stats and messages (HUD). | ASCII text or basic animation acceptable. |
-| **OOP & File Handling** | 0.5 | Use inheritance, abstraction, and file I/O correctly. Demonstrate modular design (separate classes). | Include proper comments and readable code. |
+| Category | Marks | Description |
+|-----------|:-----:|-------------|
+| **Arena Design** | 0.5 | 40×40 grid arena with player movement and collisions. |
+| **Playable Characters** | 1.0 | Two characters (`Tron`, `Kevin`) loaded via file I/O. |
+| **Leveling System** | 1.0 | XP-based stat growth and unlocks up to Level 99. |
+| **Enemy Design** | 1.0 | Five unique AI enemies with attributes from file. |
+| **Collision & Disc System** | 2.5 | Disc combat, wall collisions, and life system. |
+| **Arena Gameplay Loop** | 1.5 | Real-time or turn-based arena gameplay with HUD. |
+| **OOP & File Handling** | 0.5 | Proper use of abstraction, inheritance, and modular code. |
 
----
-
-## D. Additional Features (4 marks)
-
-| Feature | Marks | Description | Notes / Suggestions |
-|----------|:-----:|--------------|----------------------|
-| **Save Game & Leaderboard** | 1.0 | Implement save/load functionality and a **Top 10 leaderboard** using a file or SQLite. Store player name, level, score, and date. | Prompt user to save before exit. |
-| **Story Progression & Cutscenes** | 2.0 | Implement story text or simple cutscenes that unlock after each level or boss defeat. Load story content from `story.txt`. | Text-based is sufficient; images/videos optional. |
-| **Random Arena Generator** | 0.5 | Generate random grid layouts each game. Ensure logical paths and playability. | Use random seed or algorithmic generation. |
-| **Visual & Achievement Enhancements** | 0.5 | Add colored text, ASCII art UI, and achievements such as “🏆 Defeated Clu!” | Load achievements/UI text from resource files. |
+**Total Basic Marks: 8**
 
 ---
 
-## F. Tips for Scoring Marks Easily  
+#### C. Extra Features (4 Marks)
 
-1. ✅ Focus on completing the **8 basic marks** first.  
-   - Start with movement, collision, and File I/O for characters/enemies.  
-   - Ensure the arena and core logic are working.  
-2. 🎮 Use **text-based display** (no GUI required for full marks).  
-3. 🧠 Keep AI simple — any movement logic is acceptable for passing criteria.  
-4. 💾 Implement basic story and narrative choices using text files for easy marks.  
-5. ✨ Attempt **one extra feature** (e.g., save or leaderboard) for bonus marks.  
+| Feature | Marks | Description |
+|----------|:-----:|-------------|
+| Save Game & Leaderboard | 1.0 | Save/load progress and top player rankings. |
+| Story & Cutscenes | 2.0 | Unlockable narrative between levels. |
+| Random Arena Generator | 0.5 | Procedurally generated grids. |
+| Aesthetic & Achievements | 0.5 | Colored text, ASCII art, and rewards. |
+
+**Total Additional Marks: 4**
 
 ---
+
+**Tip:**  
+Focus on the core 8 marks first — movement, collision, File I/O, and basic gameplay.  
+Add one or two extra features for distinction.
+
 
 ## 2 - Basic Requirement (Total - 8 marks)
 
@@ -503,7 +482,7 @@ If you are seeking for the possible inspiration or tutorials, you might watch th
 
 1. Snake Game in Java – Java2D Package Tutorial
 2. Artificial Intelligence Pathfinding for Grid-Based Games
-3. SQLite Database Integration in Java Applications
+3. CSV File I/O or SQLite Database Integration in Java Applications
 4. Version Control with Git and GitHub
 5. Tron (1982/2010) – Film and Arcade Game Reference
 

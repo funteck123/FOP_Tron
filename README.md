@@ -4,7 +4,7 @@ All the resources mentioned in this assignment can be found at [Here](https://gi
 
 As of your Fundamental of Programming (FOP) Assignment, you are required to design and develop a 2D interactive game inspired by the Tron: Legacy (2010) and [Tron (1982 movie and video game)](https://en.wikipedia.org/wiki/Tron_(video_game)).
 
-![Classic tron legacy light cycles] (image/Classictronlegacylightcycles.webp)
+![Classic tron legacy light cycles](image/Classictronlegacylightcycles.webp)
 
 ## 1 - Introduction
 

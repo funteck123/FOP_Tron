@@ -62,7 +62,7 @@ Your goal is to build a playable **Light Cycle Arena** game with leveling, enemi
 
 **Tip:**  
 Focus on the core 8 marks first — movement, collision, File I/O, and basic gameplay.  
-Add one or two extra features for distinction.
+Add 1 or 2 extra features to get additional marks. It is NOT compulsory to implement only the same extr features.
 
 
 ## 2 - Basic Requirement (Total - 8 marks)

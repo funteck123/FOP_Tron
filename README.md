@@ -1,5 +1,3 @@
-<style> body { font-size: 10pt; line-height: 1.05; margin: 0.7in 0.6in; } h1 { font-size: 20pt; } h2 { font-size: 16pt; } h3 { font-size: 12pt; } h4 { font-size: 10pt; } table { font-size: 8pt; } code, pre { font-size: 8pt; } </style>
-
 
 
 # FOP Tron
